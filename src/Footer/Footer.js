@@ -10,7 +10,7 @@ const Footer = () => {
             <a href='mailto:juanignaciouranimm@gmail.com' target='_blank' rel='noopener noreferrer' className='fa fa-envelope fa-4x'/>
         </div>
         <div className='marca'>
-            <p> Made with <span className='fa fa-heart'/> by <a href='juanurani.netlify.app/' target='_blank' rel='noopener noreferrer'>Juan</a></p>
+            <p> Made with <span className='fa fa-heart'/> by <a href='https://juanurani.netlify.app/' target='_blank' rel='noopener noreferrer'>Juan</a></p>
         </div>
     </footer>
   )

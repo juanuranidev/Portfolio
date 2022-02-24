@@ -1,5 +1,5 @@
 # Portfolio
-This is my personal website where i will leave information about myself, my knowledge, technologies i use, experience and my contact information.
+This is my personal website where i will leave information about myself like my knowledge, experience, technologies i know and my contact information.
 
 # Demo
 https://juanurani.netlify.app/<br>
