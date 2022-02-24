@@ -1,0 +1,27 @@
+footer{
+    padding: 1rem;
+    background-color: #2563eb;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+    .sociales{
+        margin-bottom: 2rem;
+        a{
+            color: #ffffff;
+            margin-right: 1rem;
+            text-decoration: none;
+        }
+    }
+    .marca{
+        p{
+            color: #ffffff;
+            span{
+                color: #b6332b;
+            }
+            a{
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: 700;
+            }
+        }
+    }
+}
