@@ -7,7 +7,7 @@ import BuildYourPc from './Img/buildyourpc.png';
 
 const Projects = () => {
   return (
-    <section>
+    <section className='proyectos' id='proyectos'>
         <h2>Proyectos</h2>
         <div className='contenedorDeProyectos'>
             <Project imgSource={TiendaElectronica} imgAlt={'Imágen de la página de una tienda electrónica'} title={'Tienda electrónica'} tecnology1={'fab fa-react fa-2x react'} tecnology2={'fab fa-sass fa-2x sass'} tecnology3={'fas fa-fire fa-2x firebase'} repository={'https://github.com/juanuranidev/tiendaelectronica'} demo={'https://tiendaelectronica.netlify.app/'} />

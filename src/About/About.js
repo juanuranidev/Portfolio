@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './_About.scss';
 
 const About = () => {
   return (
-    <main className='sobreMi' id='main'>
+    <main className='about' id='about'>
         <h2>Sobre mi</h2>
         <p>Hola, mi nombre es Juan y tengo 21 años. Soy un desarrollador Frontend que vive en Córdoba, Argentina. Comencé mi carrera como desarrollador web en el 2021 gracias a Coder House.</p>
         <p>Mi objetivo a corto plazo es seguir aprendiendo y convertirme en un desarrollador experto en Frontend mientras que mi ojetivo a largo plazo es aprender tanto Backend, para convertirme en un desarrollador Full-Stack, como también algoritmos y estructuras de datos.</p>
@@ -11,4 +12,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;
