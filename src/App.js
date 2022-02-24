@@ -4,7 +4,7 @@ import Header from "./Header/Header";
 import Nav from "./Nav/Nav";
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
-import './Styles/_Core.scss'
+import './Styles/_Core.scss';
 
 function App() {
   return (
