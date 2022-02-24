@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <section>
         <h2>Proyectos</h2>
-        <div class="contenedorDeProyectos">
+        <div className='contenedorDeProyectos'>
             <Project imgSource={TiendaElectronica} imgAlt={'Imágen de la página de una tienda electrónica'} title={'Tienda electrónica'} tecnology1={'fab fa-react fa-2x react'} tecnology2={'fab fa-sass fa-2x sass'} tecnology3={'fas fa-fire fa-2x firebase'} repository={'https://github.com/juanuranidev/tiendaelectronica'} demo={'https://tiendaelectronica.netlify.app/'} />
             <Project imgSource={CryptoHunter} imgAlt={'Imágen de la página de criptomonedas'} title={'Crypto Hunter'} tecnology1={'fab fa-react fa-2x react'} tecnology2={'fab fa-sass fa-2x sass'} repository={'https://github.com/juanuranidev/cryptoapp'} demo={'https://cryptohunterapp.netlify.app/'} />
             <Project imgSource={TiendaGamer} imgAlt={'Imágen de la página de una tienda gamer'} title={'Tienda Gamer'} tecnology1={'fab fa-js-square fa-2x javascript'} tecnology2={'fab fa-sass fa-2x sass'} repository={'https://github.com/juanuranidev/tiendagamer'} demo={'https://tiendagamer.netlify.app/'} />

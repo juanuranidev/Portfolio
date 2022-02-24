@@ -11,7 +11,7 @@ const Skills = () => {
             <Skill className={'fab fa-sass fa-5x sass'} text={'SASS'}/>
             <Skill className={'fab fa-bootstrap fa-5x bootstrap'} text={'Bootstrap'}/>
             <Skill className={'fab fa-js-square fa-5x javascript'} text={'JavaScript'}/>
-            <Skill className={'far fa-sticky-note fa-5x json'} text={'JSON'}/>
+            <Skill className={'fab fa-node-js fa-5x json'} text={'NodeJS'}/>
             <Skill className={'fas fa-book fa-5x jquery'} text={'jQuery'}/>
             <Skill className={'fab fa-react fa-5x react'} text={'React'}/>
             <Skill className={'fab fa-git-alt fa-5x git'} text={'GIT'}/>
