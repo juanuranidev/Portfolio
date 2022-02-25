@@ -2,7 +2,7 @@
 This is my personal website where i will leave information about myself like my knowledge, experience, technologies i know and my contact information.
 
 # Demo
-https://juanurani.netlify.app/<br>
+https://juanurani.netlify.app/
 
 # Main Technologies
 <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="react"><br>
@@ -13,7 +13,7 @@ https://juanurani.netlify.app/<br>
 Information about me<br>
 Technologies i know<br>
 My projects<br>
-My social networks and contact information<br>
+My social networks and contact information
 
 # Libraries
 **SASS for styles 1.49.8**<br>
