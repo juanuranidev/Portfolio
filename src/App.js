@@ -5,6 +5,7 @@ import Footer from "./Footer/Footer";
 import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
+import GitHub from "./GitHub/GitHub";
 import './Styles/_Core.scss';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Skills/>
       <Projects/>
       <Contact/>
+      <GitHub/>
       <Footer/>
     </div>
   );

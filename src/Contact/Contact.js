@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section className='contact' id='contact'>
         <h2 className='contact_h2'>Contacto</h2>
-        <button className='contact_button'><a href='mailto:juanignaciouranimm@gmail.com' className='contact_button_a'>Abrir GMAIL</a></button>
+        <a href='mailto:juanignaciouranimm@gmail.com' className='contact_a'><button className='contact_a_button'>Abrir GMAIL</button></a>
     </section>
   )
 }
