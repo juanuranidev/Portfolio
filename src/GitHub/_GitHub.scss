@@ -10,6 +10,14 @@
         font-size: 3rem;
         margin-bottom: 5rem;
     }
+    .gitHub_div{
+        display: flex;
+        justify-content: center;
+        .gitHub_div_img{
+            width: 22rem;
+            margin: 0rem 0.5rem 3rem 0.5rem;
+        }
+    }
     .gitHub_img{
         margin-bottom: 3rem;
         width: 46rem;
@@ -36,6 +44,13 @@
         .gitHub_h2{
             font-size: 2.5rem;
         }
+        .gitHub_div{
+            display: flex;
+            flex-direction: column;
+            .gitHub_div_img{
+                width: 25rem;
+            }
+        }
         .gitHub_img{
             width: 35rem;
         }
@@ -47,8 +62,13 @@
         .gitHub_h2{
             font-size: 2rem;
         }
+        .gitHub_div{
+            .gitHub_div_img{
+                width: 18rem;
+            }
+        }
         .gitHub_img{
-            width: 15rem;
+            width: 18rem;
         }
     }
 }
