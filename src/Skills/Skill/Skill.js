@@ -1,5 +1,5 @@
-import React from 'react'
-import './_Skill.scss'
+import React from 'react';
+import './_Skill.scss';
 
 const Skill = ({className, text}) => {
   return (
@@ -10,4 +10,4 @@ const Skill = ({className, text}) => {
   )
 }
 
-export default Skill
+export default Skill;

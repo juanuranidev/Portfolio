@@ -1,5 +1,5 @@
-import React from 'react'
-import './_Project.scss'
+import React from 'react';
+import './_Project.scss';
 
 const Project = ({imgSource, imgAlt, title, tecnology1, tecnology2, tecnology3, repository, demo}) => {
   return (
@@ -32,4 +32,4 @@ const Project = ({imgSource, imgAlt, title, tecnology1, tecnology2, tecnology3, 
   )
 }
 
-export default Project
+export default Project;
