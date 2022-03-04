@@ -4,7 +4,6 @@ import './_Nav.scss';
 const Nav = () => {
   const [openMenu, setOpenMenu] = useState(false)
 
-
   return (
     <nav>
         <span className='fas fa-bacon fa-2x icon'/>
