@@ -4,9 +4,10 @@ import './_Nav.scss';
 const Nav = () => {
   const [openMenu, setOpenMenu] = useState(false)
 
+
   return (
     <nav>
-        <a href='index.html' className='icon'><span className='fas fa-bacon fa-2x'/></a>
+        <span className='fas fa-bacon fa-2x icon'/>
         <ul className={openMenu===true ? 'active' : null}>
             <li onClick={() => setOpenMenu(false)}><a href='#about'>Sobre mi</a></li>
             <li onClick={() => setOpenMenu(false)}><a href='#skills'>Habilidades</a></li>
