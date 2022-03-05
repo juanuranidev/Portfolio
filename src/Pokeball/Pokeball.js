@@ -11,7 +11,6 @@ const [data, setData] = useState()
     .then(resp => setData(resp))
   }
 
-
   return (
     <div className='pokeball'>
     {data
@@ -19,9 +18,7 @@ const [data, setData] = useState()
         <img src={data.sprites.front_shiny} className='pokeball_div_img' onClick={() => setData()} />
         <p className='pokeball_div_p'>¡Encontraste un {data.name}!</p>
       </div>
-    : <>
-        <img src={PokeballImage} className='pokeball_img' onClick={() => handleGetPokemon()} />   
-      </>
+    : <img src={PokeballImage} className='pokeball_img' onClick={() => handleGetPokemon()} />      
     }
   </div>
   )

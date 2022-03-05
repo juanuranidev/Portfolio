@@ -5,6 +5,7 @@
     position: absolute;
     .pokeball_div_img{
       width: 12rem;
+      cursor: pointer;
     }
     .pokeball_div_p{
       color: #ffffff;
@@ -13,6 +14,7 @@
   }
   .pokeball_img{
     position: absolute;
+    margin-top: 2rem;
     width: 4rem;
     border-radius: 50%;
     animation: shake 3s cubic-bezier(.36,.07,.19,.97) infinite;
@@ -32,7 +34,7 @@
   .pokeball{
     .pokeball_div{
       .pokeball_div_img{
-        width: 8rem;
+        width: 7rem;
       }
       .pokeball_div_p{
         font-size: 1rem;
