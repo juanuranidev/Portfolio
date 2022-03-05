@@ -5,7 +5,6 @@
     position: absolute;
     .pokeball_div_img{
       width: 12rem;
-      cursor: pointer;
     }
     .pokeball_div_p{
       color: #ffffff;
@@ -13,6 +12,7 @@
     }
   }
   .pokeball_img{
+    cursor: pointer;
     position: absolute;
     margin-top: 2rem;
     width: 4rem;
