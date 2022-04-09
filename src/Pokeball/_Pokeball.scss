@@ -4,41 +4,35 @@
   .pokeball_div{
     position: absolute;
     .pokeball_div_img{
-      width: 12rem;
+      width: 10rem;
+      cursor: pointer;
+      @media(max-width: 576px){
+        width: 7rem;
+      }
     }
     .pokeball_div_p{
       color: #ffffff;
       font-size: 1.5rem;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+      @media(max-width: 576px){
+        font-size: 1rem;
+      }
     }
   }
   .pokeball_img{
-    cursor: pointer;
     position: absolute;
     margin-top: 2rem;
     width: 4rem;
     border-radius: 50%;
     animation: shake 3s cubic-bezier(.36,.07,.19,.97) infinite;
+    cursor: pointer;
   }
 }
-
 @keyframes shake {
-    0% { transform: translate(0, 0) rotate(0); }
-    20% { transform: translate(-10px, 0) rotate(-20deg); }
-    30% { transform: translate(10px, 0) rotate(20deg); }
-    50% { transform: translate(-10px, 0) rotate(-10deg); }
-    60% { transform: translate(10px, 0) rotate(10deg); }
-    100% { transform: translate(0, 0) rotate(0); }
-}
-
-@media(max-width: 576px){
-  .pokeball{
-    .pokeball_div{
-      .pokeball_div_img{
-        width: 7rem;
-      }
-      .pokeball_div_p{
-        font-size: 1rem;
-      }
-    }
-  }
+  0% {transform: translate(0, 0) rotate(0);}
+  20% {transform: translate(-10px, 0) rotate(-20deg);}
+  30% {transform: translate(10px, 0) rotate(20deg);}
+  50% {transform: translate(-10px, 0) rotate(-10deg);}
+  60% {transform: translate(10px, 0) rotate(10deg);}
+  100% {transform: translate(0, 0) rotate(0);}
 }

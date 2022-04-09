@@ -1,74 +1,69 @@
-nav{
+.nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #2563eb;
+    background-color: #112D4E;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: sticky;
     padding: 1rem 0rem;
     top: 0;
     z-index: 100;
-    .icon{
-        color: #ffffff;
+    .nav_span{
+        color: #F9F7F7;
     }
-    ul{
+    .nav_ul{
         display: flex;
         list-style-type: none;
-        li{
-            margin: 0rem 1rem; 
-            a{
-                text-decoration: none;
-                font-weight: 700;
-                color: #ffffff;
-                display: block;
-            }
-        }
-        a:hover{
-            text-decoration: underline;
-        }
-        .closeMenu{
-            display: none;
-            color: #ffffff;
-        }
-    }    
-    .openMenu{
-        display: none;
-        color: #ffffff;
-    }
-}
-
-@media(max-width: 768px) {
-    nav{
-        ul{
+        @media(max-width: 768px){
             position: fixed;
             display: block;
             top: -100%;
             text-align: center;
-            background-color: #2563eb;
+            background-color: #112D4E;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             width: 100%;
             opacity: 0;
-            transition: 0.1s linear;
-            li{
-                padding: 1rem;
+            transition: 0.3s ease-in-out;
+        }
+        .nav_ul_li{
+            margin: 0rem 1rem; 
+            @media(max-width: 768px){
+                padding: 1.5rem;
                 margin: 0rem;
             }
-            a:hover{
+            .nav_ul_li_a{
+                text-decoration: none;
+                font-weight: 700;
+                color: #F9F7F7;
+                display: block;
+            }
+        }
+        .nav_ul_li_a:hover{
+            text-decoration: underline;
+            @media(max-width: 768px){
                 text-decoration: none;
             }
-            .closeMenu{
+        }
+        .closeMenu{
+            display: none;
+            color: #F9F7F7;
+            @media(max-width: 768px){
                 display: block;
-                color: #ffffff;
+                color: #F9F7F7;
                 margin: 1rem;
                 cursor: pointer;
             }
         }
-        .openMenu{
-            display: flex;
+    }    
+    .openMenu{
+        display: none;
+        color: #F9F7F7;
+        @media(max-width: 768px){
+            display: flex;  
         }
-        .active{
-            top: 0rem;
-            opacity: 1;
-        }
+    }
+    .active{
+        top: 0rem;
+        opacity: 1;
     }
 }

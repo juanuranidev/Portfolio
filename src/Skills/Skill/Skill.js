@@ -1,13 +1,12 @@
 import React from 'react';
 import './_Skill.scss';
 
-const Skill = ({className, text}) => {
+const Skill = ({link}) => {
   return (
     <div className='skill'>
-        <span className={className}/>
-        <h3>{text}</h3>
+      <img className='skill_img' src={link}/>
     </div>
-  )
+  );
 }
 
 export default Skill;

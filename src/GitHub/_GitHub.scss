@@ -1,74 +1,63 @@
-.gitHub{
-    padding: 5rem 0rem;
-    background-color: #ffffff;
+.github{
+    padding: 5rem 1rem;
+    background-color: #F9F7F7;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    .gitHub_h2{
+    .github_h2{
         font-size: 3rem;
         margin-bottom: 5rem;
-    }
-    .gitHub_div{
-        display: flex;
-        justify-content: center;
-        .gitHub_div_img{
-            width: 22rem;
-            margin: 0rem 0.5rem 3rem 0.5rem;
+        @media(max-width: 768px){
+            font-size: 2.5rem;
+        }
+        @media(max-width: 576px){
+            font-size: 2rem;
         }
     }
-    .gitHub_img{
+    .github_div{
+        display: flex;
+        justify-content: center;
+        @media(max-width: 768px){
+            display: flex;
+            flex-direction: column;
+        }
+        .github_div_img{
+            width: 22rem;
+            margin: 0rem 0.5rem 3rem 0.5rem;
+            @media(max-width: 768px){
+                width: 25rem;
+            }
+            @media(max-width: 576px){
+                width: 18rem;
+            }
+        }
+    }
+    .github_img{
         margin-bottom: 3rem;
         width: 46rem;
+        @media(max-width: 768px){
+            width: 35rem;
+        }
+        @media(max-width: 576px){
+            width: 18rem;
+        }
     }
-    .gitHub_a{
-        .gitHub_a_button{
-            font-weight: 600;
+    .github_a{
+        .github_a_button{
+            font-weight: 700;
             font-size: 1rem;
             color: #ffffff;
             border: none;
             border-radius: 0.25rem;
-            background-color: #2563eb;
+            background-color: #112D4E;
             padding: 1rem;
             cursor: pointer;
         }
-        .gitHub_a_button:active{
-            transform: scale(.95);
+        .github_a_button:active{
+            transition: all 0.1s ease-in-out;
+            transform: scale(0.95);
         }
     } 
-}
-
-@media(max-width: 768px) {
-    .gitHub{
-        .gitHub_h2{
-            font-size: 2.5rem;
-        }
-        .gitHub_div{
-            display: flex;
-            flex-direction: column;
-            .gitHub_div_img{
-                width: 25rem;
-            }
-        }
-        .gitHub_img{
-            width: 35rem;
-        }
-    }
-}
-
-@media(max-width: 576px) {
-    .gitHub{
-        .gitHub_h2{
-            font-size: 2rem;
-        }
-        .gitHub_div{
-            .gitHub_div_img{
-                width: 18rem;
-            }
-        }
-        .gitHub_img{
-            width: 18rem;
-        }
-    }
 }

@@ -1,21 +1,53 @@
 import React from 'react';
 import Project from './Project/Project';
-import TiendaElectronica from './Img/tiendaelectronica.png';
-import CryptoHunter from './Img/cryptohunter.png';
-import TiendaGamer from './Img/tiendagamer.png';
-import BuildYourPc from './Img/buildyourpc.png';
+import Freres from './Img/Freres.png'
+import TiendaElectronica from './Img/Tiendaelectronica.png';
+import CryptoHunter from './Img/Cryptohunter.png';
+import BuildYourPc from './Img/Buildyourpc.png';
 import './_Projects.scss';
 
 const Projects = () => {
   return (
     <section className='projects' id='projects'>
-        <h2>Proyectos</h2>
-        <div className='contenedorDeProyectos'>
-            <Project imgSource={TiendaElectronica} imgAlt={'Imágen de la página de una tienda electrónica'} title={'Tienda electrónica'} tecnology1={'fab fa-react fa-2x react'} tecnology2={'fab fa-sass fa-2x sass'} tecnology3={'fas fa-fire fa-2x firebase'} repository={'https://github.com/juanuranidev/tiendaelectronica'} demo={'https://tiendaelectronica.netlify.app/'} />
-            <Project imgSource={BuildYourPc} imgAlt={'Imágen de la página de construye tu propia pc'} title={'Construye tu pc'} tecnology1={'fab fa-react fa-2x react'} tecnology2={'fab fa-sass fa-2x sass'} tecnology3={'fas fa-fire fa-2x firebase'} repository={'https://github.com/juanuranidev/BuildYourPc'} demo={'https://buildyourpc.netlify.app/'} />
-            <Project imgSource={CryptoHunter} imgAlt={'Imágen de la página de criptomonedas'} title={'Crypto Hunter'} tecnology1={'fab fa-react fa-2x react'} tecnology2={'fab fa-sass fa-2x sass'} repository={'https://github.com/juanuranidev/cryptoapp'} demo={'https://cryptohunterapp.netlify.app/'} />
-            <Project imgSource={TiendaGamer} imgAlt={'Imágen de la página de una tienda gamer'} title={'Tienda Gamer'} tecnology1={'fab fa-js-square fa-2x javascript'} tecnology2={'fab fa-sass fa-2x sass'} repository={'https://github.com/juanuranidev/tiendagamer'} demo={'https://tiendagamer.netlify.app/'} />
-        </div>
+      <h2 className='projects_h2'>Proyectos</h2>
+      <div className='projects_div'>
+        <Project 
+          imgSource={Freres} 
+          imgAlt={'Imágen de la página de una tienda de ropa'} 
+          title={'Freres'} 
+          tecnology1={'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white'} 
+          tecnology2={'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'} 
+          tecnology3={'https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white'} 
+          repository={'https://github.com/juanuranidev/Freres'} 
+          demo={'https://freres.netlify.app/'} />
+        <Project 
+          imgSource={TiendaElectronica} 
+          imgAlt={'Imágen de la página de una tienda electrónica'} 
+          title={'Tienda electrónica'} 
+          tecnology1={'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'} 
+          tecnology2={'https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white'} 
+          tecnology3={'https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase'} 
+          repository={'https://github.com/juanuranidev/tiendaelectronica'} 
+          demo={'https://tiendaelectronica.netlify.app/'} />
+        <Project 
+          imgSource={BuildYourPc} 
+          imgAlt={'Imágen de la página de construye tu propia pc'} 
+          title={'Construye tu pc'} 
+          tecnology1={'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'} 
+          tecnology2={'https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white'} 
+          tecnology3={'https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase'}  
+          repository={'https://github.com/juanuranidev/BuildYourPc'} 
+          demo={'https://buildyourpc.netlify.app/'} />
+        <Project 
+          imgSource={CryptoHunter} 
+          imgAlt={'Imágen de la página de criptomonedas'} 
+          title={'Crypto Hunter'} 
+          tecnology1={'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'} 
+          tecnology2={'https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white'} 
+          tecnology3={'https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase'} 
+          repository={'https://github.com/juanuranidev/cryptoapp'} 
+          demo={'https://cryptohunterapp.netlify.app/'} />
+      </div>
     </section>
   )
 }

@@ -16,8 +16,8 @@ function App() {
       <About/>
       <Skills/>
       <Projects/>
-      <Contact/>
       <GitHub/>
+      <Contact/>
       <Footer/>
     </div>
   );
