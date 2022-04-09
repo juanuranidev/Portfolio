@@ -5,36 +5,27 @@
     .contact_h2{
         font-size: 3rem;
         margin-bottom: 5rem;
+        @media(max-width: 768px){
+            font-size: 2.5rem;
+        }
+        @media(max-width: 576px){
+            font-size: 2rem;
+        }
     }
     .contact_a{
         .contact_a_button{
-            color: #ffffff;
+            font-weight: 700;
             font-size: 1rem;
-            font-weight: 600;
-            padding: 1rem;
+            color: #ffffff;
             border: none;
             border-radius: 0.25rem;
-            background-color: #2563eb;
+            background-color: #112D4E;
+            padding: 1rem;
             cursor: pointer;
         }
         .contact_a_button:active{
-            transform: scale(.95);
-        }
-    }
-}
-
-@media(max-width: 768px) {
-    .contact{
-        .contact_h2{
-            font-size: 2.5rem;
-        }
-    }
-}
-
-@media(max-width: 576px) {
-    .contact{
-        .contact_h2{
-            font-size: 2rem;
+            transition: all 0.1s ease-in-out;
+            transform: scale(0.95);
         }
     }
 }

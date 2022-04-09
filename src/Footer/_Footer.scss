@@ -1,26 +1,37 @@
 footer{
     padding: 1rem;
-    background-color: #2563eb;
+    background-color: #112D4E;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
-    .sociales{
+    .socials{
         margin-bottom: 2rem;
-        a{
+        .socials_a{
             color: #ffffff;
             margin: 0rem 0.5rem;
             text-decoration: none;
         }
     }
-    .marca{
-        p{
+    .brand{
+        .brand_p{
             color: #ffffff;
-            font-weight: 600;
-            span{
+            font-weight: 700;
+            .brand_p_span{
                 color: #b6332b;
             }
-            a{
+            .brand_p_span:hover{
+                animation: heartbeat 1.25s infinite;
+            }
+            @keyframes heartbeat{
+                0%{transform: scale(1);}
+                20%{transform: scale(.75);}
+                40%{transform: scale(1);}
+                60%{transform: scale(.75);}
+                80%{transform: scale(1);}
+                100%{transform: scale(1);}
+            }
+            .brand_p_span_a{
                 color: #ffffff;
-                font-weight: 600;
+                font-weight: 700;
             }
         }
     }

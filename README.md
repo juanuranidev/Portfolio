@@ -13,9 +13,14 @@ https://juanurani.netlify.app/
 Information about me<br>
 Technologies i know<br>
 My projects<br>
+My GitHub<br>
 My social networks and contact information
 
 # Libraries
+**React for creating a modern web app 17.0.2**<br>
+npx create-react-app my-app<br>
+https://create-react-app.dev/
+
 **SASS for styles 1.49.8**<br>
 npm install sass<br>
 https://create-react-app.dev/docs/adding-a-sass-stylesheet/
