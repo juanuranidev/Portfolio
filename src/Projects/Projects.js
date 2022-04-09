@@ -1,9 +1,9 @@
 import React from 'react';
 import Project from './Project/Project';
 import Freres from './Img/Freres.png'
-import TiendaElectronica from './Img/Tiendaelectronica.png';
-import CryptoHunter from './Img/Cryptohunter.png';
-import BuildYourPc from './Img/Buildyourpc.png';
+import TiendaElectronica from './Img/TiendaElectronica.png';
+import CryptoHunter from './Img/CryptoHunter.png';
+import BuildYourPc from './Img/BuildYourPc.png';
 import './_Projects.scss';
 
 const Projects = () => {
