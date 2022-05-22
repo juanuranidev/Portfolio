@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PokeballImage from './img/pokeball.png';
+import PokeballImage from "./img/PokeballImage.svg"
 import './_Pokeball.scss';
 
 const Pokeball = () => {
@@ -8,7 +8,7 @@ const [pokemon, setPokemon] = useState();
   const handleGetPokemon = () => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${Math.floor(Math.random() * (90 - 0 + 1) + 0)}`)
     .then(resp => resp.json())
-    .then(resp => setPokemon(resp))
+    .then(resp => setTimeout(() => setPokemon(resp), 1000))
   }
 
   return (

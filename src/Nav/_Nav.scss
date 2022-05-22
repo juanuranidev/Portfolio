@@ -2,54 +2,66 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #112D4E;
+    background-color: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: sticky;
     padding: 1rem 0rem;
     top: 0;
     z-index: 100;
     .nav_span{
-        color: #F9F7F7;
+        color: #363636;
     }
     .nav_ul{
         display: flex;
         list-style-type: none;
         @media(max-width: 768px){
             position: fixed;
-            display: block;
-            top: -100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            left: -100%;
+            top: 0%;
+            height: 100%;
             text-align: center;
-            background-color: #112D4E;
+            background-color: #ffffff;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             width: 100%;
             opacity: 0;
-            transition: 0.3s ease-in-out;
+            transition: left .4s cubic-bezier(.645,.045,.355,1), opacity .4s cubic-bezier(.645,.045,.355,1);
         }
         .nav_ul_li{
+            font-size: 1rem;
             margin: 0rem 1rem; 
             @media(max-width: 768px){
-                padding: 1.5rem;
                 margin: 0rem;
+                font-size: 2.5rem;
+                width: 100%;
             }
             .nav_ul_li_a{
                 text-decoration: none;
                 font-weight: 700;
-                color: #F9F7F7;
-                display: block;
+                color: #363636;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media(max-width: 768px){
+                    height: 6rem;
+                }
             }
-        }
-        .nav_ul_li_a:hover{
-            text-decoration: underline;
-            @media(max-width: 768px){
-                text-decoration: none;
-            }
+            &:hover{
+                text-decoration: underline;
+                @media(max-width: 768px){
+                    text-decoration: none;
+                }
+         }
         }
         .closeMenu{
             display: none;
-            color: #F9F7F7;
+            color: #363636;
+            font-size: 2.5rem;
             @media(max-width: 768px){
                 display: block;
-                color: #F9F7F7;
                 margin: 1rem;
                 cursor: pointer;
             }
@@ -57,13 +69,15 @@
     }    
     .openMenu{
         display: none;
-        color: #F9F7F7;
+        color: #363636;
         @media(max-width: 768px){
             display: flex;  
         }
     }
     .active{
-        top: 0rem;
+        transition: left .4s cubic-bezier(.645,.045,.355,1), opacity .4s cubic-bezier(.645,.045,.355,1);
+        left: 0%;
         opacity: 1;
+        height: 100%;
     }
 }
