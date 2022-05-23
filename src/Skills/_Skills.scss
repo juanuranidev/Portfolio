@@ -1,7 +1,7 @@
 .skills{
     text-align: center;
-    padding: 5rem 1rem 0rem 1rem;
-    background-color: #F9F7F7;
+    padding: 5rem 1rem;
+    background-color: #ffffff;
     .skills_h2{
         font-size: 3rem;
         margin-bottom: 5rem;
@@ -16,5 +16,11 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+        .skills_div_img{
+            height: 2.6rem;
+            margin: 0rem 5rem;
+        }
     }
 }

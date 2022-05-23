@@ -15,6 +15,7 @@ const Projects = () => {
           imgSource={Freres} 
           imgAlt={'Imágen de la página de una tienda de ropa'} 
           title={'Freres'} 
+          subTitle={'E-commerce de ropa'}
           tecnology1={'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white'} 
           tecnology2={'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'} 
           tecnology3={'https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white'} 
@@ -24,6 +25,7 @@ const Projects = () => {
           imgSource={TiendaElectronica} 
           imgAlt={'Imágen de la página de una tienda electrónica'} 
           title={'Tienda electrónica'} 
+          subTitle={'E-commerce de tegnología'}
           tecnology1={'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'} 
           tecnology2={'https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white'} 
           tecnology3={'https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase'} 
@@ -33,6 +35,7 @@ const Projects = () => {
           imgSource={BuildYourPc} 
           imgAlt={'Imágen de la página de construye tu propia pc'} 
           title={'Construye tu pc'} 
+          subTitle={'Web para armar tu propia pc'}
           tecnology1={'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'} 
           tecnology2={'https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white'} 
           tecnology3={'https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase'}  
@@ -42,6 +45,7 @@ const Projects = () => {
           imgSource={CryptoHunter} 
           imgAlt={'Imágen de la página de criptomonedas'} 
           title={'Crypto Hunter'} 
+          subTitle={'Visualizador de criptomonedas'}
           tecnology1={'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'} 
           tecnology2={'https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white'} 
           tecnology3={'https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase'} 

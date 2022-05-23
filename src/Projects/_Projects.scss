@@ -1,7 +1,7 @@
 .projects{
     text-align: center;
     padding: 5rem 1rem;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     .projects_h2{
         font-size: 3rem;
         margin-bottom: 5rem;
@@ -14,7 +14,9 @@
     }
     .projects_div{
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
     }    
 }
