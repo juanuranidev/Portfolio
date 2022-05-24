@@ -1,11 +1,12 @@
 import React from 'react';
 import './_Skill.scss';
 
-const Skill = ({link}) => {
+const Skill = ({src, title}) => {
   return (
-
-      <img className='skill_img' src={link} style={{margin: "1rem"}} />
-
+    <div className='skill'>
+      <img className='skill_img' src={src} alt={title} />
+      <h3 className='skill_h3'>{title}</h3>
+    </div>
   );
 }
 

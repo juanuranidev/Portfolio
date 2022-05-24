@@ -4,6 +4,7 @@ import Freres from './Img/Freres.png'
 import TiendaElectronica from './Img/TiendaElectronica.png';
 import CryptoHunter from './Img/CryptoHunter.png';
 import BuildYourPc from './Img/BuildYourPc.png';
+import { SkillsImages } from '../Skills/ImportImages'
 import './_Projects.scss';
 
 const Projects = () => {
@@ -16,9 +17,9 @@ const Projects = () => {
           imgAlt={'Imágen de la página de una tienda de ropa'} 
           title={'Freres'} 
           subTitle={'E-commerce de ropa'}
-          tecnology1={'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white'} 
-          tecnology2={'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'} 
-          tecnology3={'https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white'} 
+          image1={SkillsImages.find(skill => skill.name === "TypeScript")} 
+          image2={SkillsImages.find(skill => skill.name === "React")} 
+          image3={SkillsImages.find(skill => skill.name === "Sass")} 
           repository={'https://github.com/juanuranidev/Freres'} 
           demo={'https://freres.netlify.app/'} />
         <Project 
@@ -26,9 +27,9 @@ const Projects = () => {
           imgAlt={'Imágen de la página de una tienda electrónica'} 
           title={'Tienda electrónica'} 
           subTitle={'E-commerce de tegnología'}
-          tecnology1={'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'} 
-          tecnology2={'https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white'} 
-          tecnology3={'https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase'} 
+          image1={SkillsImages.find(skill => skill.name === "React")} 
+          image2={SkillsImages.find(skill => skill.name === "Sass")} 
+          image3={SkillsImages.find(skill => skill.name === "Firebase")} 
           repository={'https://github.com/juanuranidev/tiendaelectronica'} 
           demo={'https://tiendaelectronica.netlify.app/'} />
         <Project 
@@ -36,9 +37,9 @@ const Projects = () => {
           imgAlt={'Imágen de la página de construye tu propia pc'} 
           title={'Construye tu pc'} 
           subTitle={'Web para armar tu propia pc'}
-          tecnology1={'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'} 
-          tecnology2={'https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white'} 
-          tecnology3={'https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase'}  
+          image1={SkillsImages.find(skill => skill.name === "React")} 
+          image2={SkillsImages.find(skill => skill.name === "Sass")} 
+          image3={SkillsImages.find(skill => skill.name === "Firebase")}  
           repository={'https://github.com/juanuranidev/BuildYourPc'} 
           demo={'https://buildyourpc.netlify.app/'} />
         <Project 
@@ -46,9 +47,9 @@ const Projects = () => {
           imgAlt={'Imágen de la página de criptomonedas'} 
           title={'Crypto Hunter'} 
           subTitle={'Visualizador de criptomonedas'}
-          tecnology1={'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'} 
-          tecnology2={'https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white'} 
-          tecnology3={'https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase'} 
+          image1={SkillsImages.find(skill => skill.name === "React")} 
+          image2={SkillsImages.find(skill => skill.name === "Sass")} 
+          image3={SkillsImages.find(skill => skill.name === "Firebase")} 
           repository={'https://github.com/juanuranidev/cryptoapp'} 
           demo={'https://cryptohunterapp.netlify.app/'} />
       </div>

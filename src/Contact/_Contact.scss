@@ -16,16 +16,23 @@
         .contact_a_button{
             font-weight: 700;
             font-size: 1rem;
-            color: #ffffff;
+            color: #000000;
             border: none;
             border-radius: 0.25rem;
-            background-color: #112D4E;
+            background-color: #f9f9f9;
             padding: 1rem;
+            border: 0.12rem solid #000000;
+            transition: all 0.15s linear;
             cursor: pointer;
-        }
-        .contact_a_button:active{
-            transition: all 0.1s ease-in-out;
-            transform: scale(0.95);
+            &:hover{
+                transition: all 0.15s linear;
+                background-color: #000000;
+                color: #ffffff;
+            }
+            &:active{
+                transition: all 0.15s linear;
+                transform: scale(0.95);
+            }
         }
     }
 }

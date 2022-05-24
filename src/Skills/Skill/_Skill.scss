@@ -1,17 +1,25 @@
 .skill{
     display: flex;
-    flex-direction: flex-start;
-    justify-content: center;
-    width: 25%;
-    margin: 0rem 5rem;
-    @media(max-width: 768px){
-        width: 33%;
-    }
-    @media(max-width: 576px){
-        width: 100%;
-        margin-bottom: 2.5rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 7rem;
+    width: 10rem; 
+    margin: 0rem 1.5rem 5rem 1.5rem;
+    .skill_h3{
+        opacity: 0.5;
+        margin-top: 0.5rem;
     }
     .skill_img{
-       
+       width: 4rem;
+       transition: all 0.15s linear;
+       filter: grayscale(100%) brightness(80%) contrast(230%);
+       @media(max-width: 992px){
+        filter: none;
+       }
+       &:hover{
+        transition: all 0.15s linear;
+           filter: none;
+       }
     }
 }

@@ -18,9 +18,8 @@
         flex-wrap: wrap;
         width: 80%;
         margin: auto;
-        .skills_div_img{
-            height: 2.6rem;
-            margin: 0rem 5rem;
+        @media(max-width: 768px){
+            width: 90%;
         }
     }
 }
