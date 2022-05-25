@@ -1,12 +1,11 @@
 footer{
     padding: 1rem;
-    background-color: #112D4E;
+    background-color: #ffffff;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
     .socials{
         margin-bottom: 2rem;
         .socials_a{
-            color: #ffffff;
+            color: #000000;
             margin: 0rem 0.5rem;
             text-decoration: none;
             font-size: 2rem;
@@ -14,7 +13,7 @@ footer{
     }
     .brand{
         .brand_p{
-            color: #ffffff;
+            color: #000000;
             font-weight: 700;
             .brand_p_span{
                 color: #b6332b;
@@ -31,7 +30,7 @@ footer{
                 100%{transform: scale(1);}
             }
             .brand_p_span_a{
-                color: #ffffff;
+                color: #000000;
                 font-weight: 700;
             }
         }
