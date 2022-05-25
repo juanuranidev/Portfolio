@@ -1,10 +1,10 @@
 import React from 'react';
-import Project from './Project/Project';
-import Freres from './Img/Freres.png'
-import TiendaElectronica from './Img/TiendaElectronica.png';
-import CryptoHunter from './Img/CryptoHunter.png';
-import BuildYourPc from './Img/BuildYourPc.png';
 import { SkillsImages } from '../Skills/ImportImages'
+import TiendaElectronica from '../Assets/Projects/TiendaElectronica.png';
+import CryptoHunter from '../Assets/Projects/CryptoHunter.png';
+import BuildYourPc from '../Assets/Projects/BuildYourPc.png';
+import Project from './Project/Project';
+import Freres from '../Assets/Projects/Freres.png'
 import './_Projects.scss';
 
 const Projects = () => {
