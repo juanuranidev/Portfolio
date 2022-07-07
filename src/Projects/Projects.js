@@ -1,5 +1,5 @@
 import React from 'react';
-import { SkillsImages } from '../Skills/ImportImages'
+import { SkillsImages } from '../Sections/Skills/ImportImages'
 import TiendaElectronica from '../Assets/Projects/TiendaElectronica.png';
 import CryptoHunter from '../Assets/Projects/CryptoHunter.png';
 import BuildYourPc from '../Assets/Projects/BuildYourPc.png';

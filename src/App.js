@@ -2,10 +2,10 @@ import Nav from "./Nav/Nav";
 import Header from "./Header/Header";
 import About from "./About/About";
 import Footer from "./Footer/Footer";
-import Skills from "./Skills/Skills";
+import Skills from "./Sections/Skills/Skills";
 import Projects from "./Projects/Projects";
-import Contact from "./Contact/Contact";
-import GitHub from "./GitHub/GitHub";
+import Contact from "./Sections/Contact/Contact";
+import GitHub from "./Sections/GitHub/GitHub";
 import './Styles/_Core.scss';
 
 function App() {
