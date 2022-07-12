@@ -15,7 +15,8 @@ Information about me<br>
 Technologies i know<br>
 My projects<br>
 My GitHub<br>
-My social networks and contact information
+My social networks and contact information<br>
+Responsive design
 
 # Libraries
 **React for creating a modern web app 17.0.2**<br>
