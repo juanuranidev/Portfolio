@@ -18,3 +18,15 @@
     color: #aa77ff;
   }
 }
+
+@keyframes change-border-color {
+  0% {
+    border-color: #aa77ff;
+  }
+  50% {
+    border-color: #62cdff;
+  }
+  100% {
+    border-color: #aa77ff;
+  }
+}

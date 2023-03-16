@@ -9,6 +9,8 @@ export default function Navbar() {
         <HStack spacing="10">
           <Button
             variant="link"
+            color="#000000"
+            _hover={{ textDecoration: "none" }}
             animation={{
               transition: "transform 0.3s",
               "&:hover": {
@@ -20,6 +22,8 @@ export default function Navbar() {
           </Button>
           <Button
             variant="link"
+            color="#000000"
+            _hover={{ textDecoration: "none" }}
             animation={{
               transition: "transform 0.3s",
               "&:hover": {
@@ -31,6 +35,8 @@ export default function Navbar() {
           </Button>
           <Button
             variant="link"
+            color="#000000"
+            _hover={{ textDecoration: "none" }}
             animation={{
               transition: "transform 0.3s",
               "&:hover": {
@@ -42,7 +48,9 @@ export default function Navbar() {
           </Button>
           <Button
             variant="link"
-            animation={{
+            color="#000000"
+            _hover={{ textDecoration: "none" }}
+            css={{
               transition: "transform 0.3s",
               "&:hover": {
                 transform: "scale(1.05)",
