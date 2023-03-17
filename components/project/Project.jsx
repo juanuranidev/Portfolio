@@ -21,9 +21,9 @@ export default function Project({
 }) {
   return (
     <Flex
-      maxW="50rem"
-      alignItems="center"
-      justifyContent="center"
+      maxW="60rem"
+      alignItems="space-between"
+      justifyContent="space-between"
       mb="40"
       flexDirection={hasRightImage ? "row-reverse" : "row"}
     >
@@ -40,70 +40,78 @@ export default function Project({
       >
         <Image src={image} borderRadius="md" />
       </Box>
-      <VStack alignItems="flex-start">
-        <Text fontSize="4xl" fontWeight="600">
-          {title}
-        </Text>
-        <Text fontSize="md" fontWeight="400">
-          {description}
-        </Text>
-        <Text fontSize="md" fontWeight="600">
-          Hecho con:
-        </Text>
-        <HStack>
-          <Text
-            p="2"
-            px="5"
-            shadow="sm"
-            bg="#eaeff5"
-            fontSize="sm"
-            display="flex"
-            fontWeight="500"
-            borderRadius="md"
-            alignItems="center"
-          >
-            React.js
+      <Flex
+        flexDirection="column"
+        alignItems="space-between"
+        justifyContent="space-between"
+      >
+        <VStack alignItems="flex-start">
+          <Text fontSize="5xl" fontWeight="600">
+            {title}
           </Text>
-          <Text
-            p="2"
-            px="5"
-            shadow="sm"
-            bg="#eaeff5"
-            fontSize="sm"
-            display="flex"
-            fontWeight="500"
-            borderRadius="md"
-            alignItems="center"
-          >
-            TypeScript
+          <Text fontSize="lg" fontWeight="400" mb="5">
+            {description}
           </Text>
-          <Text
-            p="2"
-            px="5"
-            shadow="sm"
-            bg="#eaeff5"
-            fontSize="sm"
-            display="flex"
-            fontWeight="500"
-            borderRadius="md"
-            alignItems="center"
-          >
-            SASS
+        </VStack>
+        <VStack alignItems="flex-start">
+          <Text fontSize="md" fontWeight="600">
+            Hecho con:
           </Text>
-          <Text
-            p="2"
-            px="5"
-            shadow="sm"
-            bg="#eaeff5"
-            fontSize="sm"
-            display="flex"
-            fontWeight="500"
-            borderRadius="md"
-            alignItems="center"
-          >
-            Firebase
-          </Text>
-        </HStack>
+          <HStack mb="5">
+            <Text
+              p="2"
+              px="5"
+              shadow="sm"
+              bg="#e0e0e0"
+              fontSize="sm"
+              display="flex"
+              fontWeight="500"
+              borderRadius="md"
+              alignItems="center"
+            >
+              React.js
+            </Text>
+            <Text
+              p="2"
+              px="5"
+              shadow="sm"
+              bg="#e0e0e0"
+              fontSize="sm"
+              display="flex"
+              fontWeight="500"
+              borderRadius="md"
+              alignItems="center"
+            >
+              TypeScript
+            </Text>
+            <Text
+              p="2"
+              px="5"
+              shadow="sm"
+              bg="#e0e0e0"
+              fontSize="sm"
+              display="flex"
+              fontWeight="500"
+              borderRadius="md"
+              alignItems="center"
+            >
+              SASS
+            </Text>
+            <Text
+              p="2"
+              px="5"
+              shadow="sm"
+              bg="#e0e0e0"
+              fontSize="sm"
+              display="flex"
+              fontWeight="500"
+              borderRadius="md"
+              alignItems="center"
+            >
+              Firebase
+            </Text>
+          </HStack>
+        </VStack>
         <ButtonGroup pt="4" spacing="5">
           <Button
             variant="outline"
@@ -138,7 +146,7 @@ export default function Project({
             Página Web
           </Button>
         </ButtonGroup>
-      </VStack>
+      </Flex>
     </Flex>
   );
 }
