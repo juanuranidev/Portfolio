@@ -14,9 +14,7 @@ export default function Projects() {
       flexDirection="column"
       alignItems="center"
     >
-      <AnimatedComponent>
-        <Heading mb="20">proyectos</Heading>
-      </AnimatedComponent>
+      <Heading mb="20">PROYECTOS</Heading>
       <AnimatedComponent>
         <Project
           title="Frères"
@@ -30,7 +28,7 @@ export default function Projects() {
       <AnimatedComponent>
         <Project
           title="Entrenally"
-          description="Aplicación de autogestión con el objetivo de ayudar a los entrenadores a realizar todas las tareas relacionadas a su trabajo en un solo lugar y de manera sencilla."
+          description="Aplicación de autogestión para ayudar a entrenadores a realizar las tareas relacionadas a su trabajo en un solo lugar."
           technologies={["Next.js", "JavaScript", "Chakra-ui"]}
           image={Project2.src}
           repository={""}

@@ -23,45 +23,51 @@ export default function Project({
   return (
     <Flex
       maxW="60rem"
-      alignItems="space-between"
+      alignItems="center"
       justifyContent="space-between"
-      mb="40"
+      mb={{ base: "20", md: "40" }}
       flexDirection={
         hasRightImage
           ? { base: "column", md: "row-reverse" }
           : { base: "column", md: "row" }
       }
     >
-      <Box
-        // w="96"
+      <Flex
+        // w={{ base: "100%", sm: "40rem" }}
+        // m="auto"
+        flexDirection="column"
+        h="100%"
         mr={hasRightImage ? "0" : { base: "0", md: "5" }}
         ml={hasRightImage ? { base: "0", md: "5" } : "0"}
         mb={{ base: "5", md: "0" }}
-        p="1"
-        bg="linear-gradient(to bottom, rgba(170, 119, 255, 0.6), rgba(98, 205, 255, 0.6))"
         display="flex"
         alignItems="center"
         justifyContent="center"
-        borderRadius="md"
       >
-        <Image src={image} borderRadius="md" />
-      </Box>
+        <Box
+          p="1"
+          w={{ base: "100%", md: "16rem", lg: "22rem" }}
+          borderRadius="md"
+          bg="linear-gradient(to bottom, rgba(170, 119, 255, 0.6), rgba(98, 205, 255, 0.6))"
+        >
+          <Image src={image} borderRadius="md" m="auto" />
+        </Box>
+      </Flex>
       <Flex
         flexDirection="column"
         alignItems="space-between"
         justifyContent="space-between"
       >
-        <VStack alignItems="flex-start" mb={{ base: "5", md: "0" }}>
-          <Text fontSize="5xl" fontWeight="600">
+        <Flex
+          flexDirection="column"
+          alignItems="flex-start"
+          mb={{ base: "5", md: "0" }}
+        >
+          <Text fontSize="4xl" fontWeight="600">
             {title}
           </Text>
-          <Text fontSize="lg" fontWeight="400" mb="5">
+          <Text fontSize={{ base: "md", md: "lg" }} fontWeight="400" mb="5">
             {description}
-          </Text>
-        </VStack>
-        <VStack alignItems="flex-start" mb={{ base: "5", md: "0" }}>
-          <Text fontSize="md" fontWeight="600">
-            Hecho con:
           </Text>
           <HStack mb="5">
             {technologies.map((technology) => (
@@ -72,7 +78,7 @@ export default function Project({
                 bg="#e0e0e0"
                 fontSize="sm"
                 display="flex"
-                fontWeight="500"
+                fontWeight="700"
                 borderRadius="md"
                 alignItems="center"
               >
@@ -80,9 +86,9 @@ export default function Project({
               </Text>
             ))}
           </HStack>
-        </VStack>
+        </Flex>
         <ButtonGroup
-          pt="4"
+          // pt="4"
           spacing="5"
           justifyContent={{ base: "center", md: "flex-start" }}
         >
