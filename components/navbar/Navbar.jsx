@@ -44,7 +44,7 @@ export default function Navbar() {
               },
             }}
           >
-            Informacion
+            Experiencia
           </Button>
           <Button
             variant="link"
