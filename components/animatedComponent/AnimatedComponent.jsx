@@ -28,7 +28,8 @@ export default function AnimatedComponent({ children }) {
           transition={{
             type: "spring",
             stiffness: 260,
-            damping: 20,
+            damping: 100,
+            delay: 0.2,
           }}
         >
           <Box>{children}</Box>
