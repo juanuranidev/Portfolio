@@ -1,27 +1,28 @@
-import { Container, Text } from "@chakra-ui/react";
-import Head from "next/head";
-import Image from "next/image";
-import AnimatedComponent from "../components/animatedComponent/AnimatedComponent";
-import Header from "../components/header/Header";
-import Navbar from "../components/navbar/Navbar";
-import Project from "../components/project/Project";
-import styles from "../styles/Home.module.css";
-import Project1 from "../assets/images/Project1.png";
+import { Container } from "@chakra-ui/react";
+import Experience from "../views/experience/Experience";
 import Projects from "../views/projects/Projects";
+import Navbar from "../components/navbar/Navbar";
+import Header from "../views/header/Header";
+import GitHub from "../views/github/GitHub";
+import Skills from "../views/skills/Skills";
+import About from "../views/about/About";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <Container maxW="full">
       <Head>
-        <title>Juan Urani Portfolio</title>
-        <meta name="description" content="Juan Urani Portfolio" />
+        <title>Juan Urani - Portfolio</title>
+        <meta name="description" content="Juan Urani - Portfolio" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Navbar />
-      <AnimatedComponent>
-        <Header />
-      </AnimatedComponent>
+      <Header />
+      <About />
+      <Experience />
       <Projects />
+      <Skills />
+      <GitHub />
     </Container>
   );
 }

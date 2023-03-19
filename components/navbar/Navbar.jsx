@@ -19,7 +19,9 @@ export default function Navbar() {
               },
             }}
           >
-            Sobre mi
+            <Link to="about" smooth={true} duration={500}>
+              Sobre mi
+            </Link>
           </Button>
           <Button
             variant="link"

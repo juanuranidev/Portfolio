@@ -30,7 +30,7 @@ export default function Animation({ children }) {
             type: "spring",
             stiffness: 260,
             damping: 100,
-            delay: 0.2,
+            delay: 0.1,
           }}
         >
           <Box>{children}</Box>
