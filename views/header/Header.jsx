@@ -11,10 +11,11 @@ export default function Header() {
       display="flex"
       flexDirection="column"
       alignItems="center"
+      textAlign="center"
     >
       <Animation>
         <Text fontSize="lg" fontWeight="600">
-          Hola. Bienvenido a mi porfolio.
+          Hola, bienvenido a mi porfolio.
         </Text>
         <Text
           fontSize="7xl"
@@ -37,6 +38,9 @@ export default function Header() {
           }}
         >
           Frontend Developer
+        </Text>
+        <Text w="100%" textAlign="right" fontWeight="700">
+          minimalista.
         </Text>
       </Animation>
     </Container>
