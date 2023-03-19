@@ -11,6 +11,7 @@ export default function Experience() {
       flexDirection="column"
       alignItems="center"
       textAlign="center"
+      id="experience"
     >
       <Heading mb="40">EXPERIENCIA</Heading>
       <Animation>

@@ -13,6 +13,7 @@ export default function Projects() {
       display="flex"
       flexDirection="column"
       alignItems="center"
+      id="projects"
     >
       <Heading mb="40">PROYECTOS</Heading>
       <Animation>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Flex, HStack, Text, Button } from "@chakra-ui/react";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   return (
@@ -31,7 +32,9 @@ export default function Navbar() {
               },
             }}
           >
-            Proyectos
+            <Link to="experience" smooth={true} duration={500}>
+              Experiencia
+            </Link>
           </Button>
           <Button
             variant="link"
@@ -44,7 +47,9 @@ export default function Navbar() {
               },
             }}
           >
-            Experiencia
+            <Link to="projects" smooth={true} duration={500}>
+              Proyectos
+            </Link>
           </Button>
           <Button
             variant="link"
