@@ -1,14 +1,13 @@
 import React from "react";
 import {
-  Flex,
-  Image,
   Box,
-  VStack,
+  Link,
+  Flex,
   Text,
+  Image,
   HStack,
   Button,
   ButtonGroup,
-  Link,
 } from "@chakra-ui/react";
 
 export default function Project({
@@ -33,8 +32,6 @@ export default function Project({
       }
     >
       <Flex
-        // w={{ base: "100%", sm: "40rem" }}
-        // m="auto"
         flexDirection="column"
         h="100%"
         mr={hasRightImage ? "0" : { base: "0", md: "5" }}
@@ -88,7 +85,6 @@ export default function Project({
           </HStack>
         </Flex>
         <ButtonGroup
-          // pt="4"
           spacing="5"
           justifyContent={{ base: "center", md: "flex-start" }}
         >
@@ -118,15 +114,7 @@ export default function Project({
               Repositorio
             </Link>
           </Button>
-          <Button
-            variant="link"
-            // _hover={{
-            //   background: "linear-gradient(to bottom, #aa77ff, #62cdff)",
-            //   backgroundClip: "text",
-            //   color: "transparent",
-            // }}
-            color="#000000"
-          >
+          <Button variant="link" color="#000000">
             <Link href={website} target="_blank">
               Página Web
             </Link>

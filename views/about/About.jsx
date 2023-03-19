@@ -35,9 +35,9 @@ export default function About() {
           </Animation>
           <Animation>
             <Text mb="5">
-              Con 1 año y trés meses de experiencia escribiendo código me
-              considero una persona proactiva y con muchas ansias de seguir
-              aprendiendo y adentrarme en esta hermosa industria.
+              Con más de un año de experiencia escribiendo código me considero
+              una persona proactiva y con muchas ansias de seguir aprendiendo y
+              adentrarme en esta hermosa industria.
             </Text>
           </Animation>
           <Animation>

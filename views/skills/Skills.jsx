@@ -78,7 +78,6 @@ export default function Skills() {
       alignItems="center"
     >
       <Heading mb="40">HABILIDADES</Heading>
-
       <Flex justifyContent="center" wrap="wrap">
         {icons.map((icon, index) => (
           <Animation key={index}>

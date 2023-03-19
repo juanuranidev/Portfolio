@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Heading, Img, Flex, Text, VStack } from "@chakra-ui/react";
+import { Container, Heading, Text, VStack } from "@chakra-ui/react";
 import Animation from "../../components/animation/Animation";
 
 export default function Experience() {
