@@ -67,10 +67,11 @@ export default function Project({
             {description}
           </Text>
           <HStack mb="5">
-            {technologies.map((technology) => (
+            {technologies.map((technology, index) => (
               <Text
                 p="2"
                 px="5"
+                key={index}
                 shadow="sm"
                 bg="#e0e0e0"
                 fontSize="sm"
