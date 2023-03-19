@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { Box } from "@chakra-ui/react";
 
-export default function AnimatedComponent({ children }) {
+export default function Animation({ children }) {
   const { ref, inView } = useInView({
     threshold: 0.1,
   });
@@ -11,13 +11,14 @@ export default function AnimatedComponent({ children }) {
   const variants = {
     hidden: {
       opacity: 0,
-      y: 20,
+      x: -20,
     },
     visible: {
       opacity: 1,
-      y: 0,
+      x: 0,
     },
   };
+
   return (
     <Box ref={ref}>
       {inView ? (

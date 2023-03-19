@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Heading, Img, Flex, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import AnimatedComponent from "../animatedComponent/AnimatedComponent";
+import Animation from "../../components/animation/Animation";
 
 export default function Skills() {
   const MotionFlex = motion(Flex);
@@ -48,8 +48,12 @@ export default function Skills() {
       link: "https://skillicons.dev/icons?i=bootstrap",
     },
     {
-      name: "Git",
-      link: "https://skillicons.dev/icons?i=git",
+      name: "MongoDB",
+      link: "https://skillicons.dev/icons?i=mongo",
+    },
+    {
+      name: "Firebase",
+      link: "https://skillicons.dev/icons?i=firebase",
     },
     {
       name: "GitHub",
@@ -60,28 +64,24 @@ export default function Skills() {
       link: "https://skillicons.dev/icons?i=gitlab",
     },
     {
-      name: "MongoDB",
-      link: "https://skillicons.dev/icons?i=mongo",
-    },
-    {
-      name: "Firebase",
-      link: "https://skillicons.dev/icons?i=firebase",
+      name: "Git",
+      link: "https://skillicons.dev/icons?i=git",
     },
   ];
 
   return (
     <Container
-      my="20"
+      mb="40"
       maxW="container.xl"
       display="flex"
       flexDirection="column"
       alignItems="center"
     >
-      <Heading mb="20">HABILIDADES</Heading>
+      <Heading mb="40">HABILIDADES</Heading>
 
       <Flex justifyContent="center" wrap="wrap">
-        {icons.map((icon) => (
-          <AnimatedComponent>
+        {icons.map((icon, index) => (
+          <Animation key={index}>
             <MotionFlex
               p="3"
               mb="5"
@@ -108,7 +108,7 @@ export default function Skills() {
               <Img src={icon.link} w="10" />
               <Text ml="2">{icon.name}</Text>
             </MotionFlex>
-          </AnimatedComponent>
+          </Animation>
         ))}
       </Flex>
     </Container>
