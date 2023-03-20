@@ -25,7 +25,7 @@ export default function About() {
       alignItems="center"
       id="about"
     >
-      <Heading mb="40">SOMBRE MI</Heading>
+      <Heading mb="40">SOBRE MI</Heading>
       <Flex
         flexDirection={{ base: "column", lg: "row" }}
         alignItems="center"
