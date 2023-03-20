@@ -5,13 +5,13 @@ import Animation from "../../components/animation/Animation";
 export default function GitHub() {
   return (
     <Container
-      my="40"
+      mt="40"
       maxW="container.xl"
       display="flex"
       flexDirection="column"
       alignItems="center"
     >
-      <Heading mb="40">GITHUB</Heading>
+      <Heading mb={{ base: "10", md: "20" }}>GITHUB</Heading>
       <Flex mb="10" flexDirection={{ base: "column", md: "row" }}>
         <Animation>
           <Img

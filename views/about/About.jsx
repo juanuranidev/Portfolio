@@ -18,14 +18,14 @@ import Animation from "../../components/animation/Animation";
 export default function About() {
   return (
     <Container
-      mt="40"
+      mt="32"
       maxW="container.xl"
       display="flex"
       flexDirection="column"
       alignItems="center"
       id="about"
     >
-      <Heading mb="40">SOBRE MI</Heading>
+      <Heading mb={{ base: "10", md: "20" }}>SOBRE MI</Heading>
       <Flex
         flexDirection={{ base: "column", lg: "row" }}
         alignItems="center"

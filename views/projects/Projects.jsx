@@ -8,14 +8,14 @@ import Project from "../../components/project/Project";
 export default function Projects() {
   return (
     <Container
-      mt="40"
+      mt="32"
       maxW="container.xl"
       display="flex"
       flexDirection="column"
       alignItems="center"
       id="projects"
     >
-      <Heading mb="40">PROYECTOS</Heading>
+      <Heading mb={{ base: "10", md: "20" }}>PROYECTOS</Heading>
       <Animation>
         <Project
           title="Frères"

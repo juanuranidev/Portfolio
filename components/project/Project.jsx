@@ -23,7 +23,7 @@ export default function Project({
       maxW="60rem"
       alignItems="center"
       justifyContent="space-between"
-      mb={{ base: "20", md: "40" }}
+      mb={{ base: "20", md: "32" }}
       flexDirection={
         hasRightImage
           ? { base: "column", md: "row-reverse" }
@@ -56,8 +56,9 @@ export default function Project({
       >
         <Flex
           flexDirection="column"
-          alignItems="flex-start"
+          alignItems={{ base: "center", md: "flex-start" }}
           mb={{ base: "5", md: "0" }}
+          textAlign={{ base: "center", md: "left" }}
         >
           <Text fontSize="4xl" fontWeight="600">
             {title}

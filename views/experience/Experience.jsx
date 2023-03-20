@@ -5,7 +5,7 @@ import Animation from "../../components/animation/Animation";
 export default function Experience() {
   return (
     <Container
-      my="40"
+      mt="32"
       maxW="container.xl"
       display="flex"
       flexDirection="column"
@@ -13,9 +13,9 @@ export default function Experience() {
       textAlign="center"
       id="experience"
     >
-      <Heading mb="40">EXPERIENCIA</Heading>
+      <Heading mb={{ base: "10", md: "20" }}>EXPERIENCIA</Heading>
       <Animation>
-        <VStack mb="40">
+        <VStack mb={{ base: "20", md: "40" }}>
           <Text
             fontSize={{ base: "md", md: "lg" }}
             fontWeight="600"

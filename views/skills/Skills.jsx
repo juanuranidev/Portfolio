@@ -71,13 +71,13 @@ export default function Skills() {
 
   return (
     <Container
-      mb="40"
+      mt="32"
       maxW="container.xl"
       display="flex"
       flexDirection="column"
       alignItems="center"
     >
-      <Heading mb="40">HABILIDADES</Heading>
+      <Heading mb={{ base: "10", md: "20" }}>HABILIDADES</Heading>
       <Flex justifyContent="center" wrap="wrap">
         {icons.map((icon, index) => (
           <Animation key={index}>
