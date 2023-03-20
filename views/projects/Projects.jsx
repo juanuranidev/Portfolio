@@ -29,7 +29,7 @@ export default function Projects() {
       <Animation>
         <Project
           title="Entrenally"
-          description="Aplicación de autogestión para ayudar a entrenadores a realizar las tareas relacionadas a su trabajo en un solo lugar."
+          description="Aplicación de autogestión para ayudar a entrenadores a realizar todas las tareas relacionadas a su trabajo en un solo lugar y de manera sencilla."
           technologies={["Next.js", "JavaScript", "Chakra-ui"]}
           image={Project2.src}
           repository={""}
