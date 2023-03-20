@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Heading, Img, Flex, Text } from "@chakra-ui/react";
 import Animation from "../../components/animation/Animation";
+import Fideos from "../../assets/icons/Fideos.png";
 
 export default function GitHub() {
   return (
@@ -11,7 +12,10 @@ export default function GitHub() {
       flexDirection="column"
       alignItems="center"
     >
-      <Heading mb={{ base: "10", md: "20" }}>GITHUB</Heading>
+      <Img src={Fideos.src} w="12" />
+      <Heading mb={{ base: "10", md: "20" }} mt="40">
+        GITHUB
+      </Heading>
       <Flex mb="10" flexDirection={{ base: "column", md: "row" }}>
         <Animation>
           <Img

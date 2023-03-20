@@ -1,11 +1,12 @@
 import React from "react";
-import { Container, Heading, Text, VStack } from "@chakra-ui/react";
+import { Container, Heading, Text, VStack, Img } from "@chakra-ui/react";
 import Animation from "../../components/animation/Animation";
+import Hamburguesa from "../../assets/icons/Hamburguesa.png";
 
 export default function Experience() {
   return (
     <Container
-      mt="32"
+      mt="40"
       maxW="container.xl"
       display="flex"
       flexDirection="column"
@@ -13,7 +14,10 @@ export default function Experience() {
       textAlign="center"
       id="experience"
     >
-      <Heading mb={{ base: "10", md: "20" }}>EXPERIENCIA</Heading>
+      <Img src={Hamburguesa.src} w="12" />
+      <Heading mb={{ base: "10", md: "20" }} mt="40">
+        EXPERIENCIA
+      </Heading>
       <Animation>
         <VStack mb={{ base: "20", md: "40" }}>
           <Text

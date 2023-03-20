@@ -23,7 +23,7 @@ export default function Project({
       maxW="60rem"
       alignItems="center"
       justifyContent="space-between"
-      mb={{ base: "20", md: "32" }}
+      mb={{ base: "20", md: "40" }}
       flexDirection={
         hasRightImage
           ? { base: "column", md: "row-reverse" }

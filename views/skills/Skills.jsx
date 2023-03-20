@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Heading, Img, Flex, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Animation from "../../components/animation/Animation";
+import Sandia from "../../assets/icons/Sandia.png";
 
 export default function Skills() {
   const MotionFlex = motion(Flex);
@@ -71,13 +72,16 @@ export default function Skills() {
 
   return (
     <Container
-      mt="32"
+      mt={{ base: "20", md: "0" }}
       maxW="container.xl"
       display="flex"
       flexDirection="column"
       alignItems="center"
     >
-      <Heading mb={{ base: "10", md: "20" }}>HABILIDADES</Heading>
+      <Img src={Sandia.src} w="12" />
+      <Heading mb={{ base: "10", md: "20" }} mt="40">
+        HABILIDADES
+      </Heading>
       <Flex justifyContent="center" wrap="wrap">
         {icons.map((icon, index) => (
           <Animation key={index}>

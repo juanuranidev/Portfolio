@@ -14,18 +14,23 @@ import {
 } from "@chakra-ui/react";
 import ProfilePicture from "../../assets/images/ProfilePicture.jpg";
 import Animation from "../../components/animation/Animation";
+import FideosChinos from "../../assets/icons/FideosChinos.png";
+import Image from "next/image";
 
 export default function About() {
   return (
     <Container
-      mt="32"
+      mt="40"
       maxW="container.xl"
       display="flex"
       flexDirection="column"
       alignItems="center"
       id="about"
     >
-      <Heading mb={{ base: "10", md: "20" }}>SOBRE MI</Heading>
+      <Img src={FideosChinos.src} w="12" />
+      <Heading mb={{ base: "10", md: "20" }} mt="40">
+        SOBRE MI
+      </Heading>
       <Flex
         flexDirection={{ base: "column", lg: "row" }}
         alignItems="center"

@@ -1,21 +1,25 @@
 import React from "react";
-import { Container, Heading } from "@chakra-ui/react";
+import { Container, Heading, Img } from "@chakra-ui/react";
 import Animation from "../../components/animation/Animation";
 import Project1 from "../../assets/images/Project1.png";
 import Project2 from "../../assets/images/Project2.png";
 import Project from "../../components/project/Project";
+import Cereza from "../../assets/icons/Cereza.png";
 
 export default function Projects() {
   return (
     <Container
-      mt="32"
+      mt="40"
       maxW="container.xl"
       display="flex"
       flexDirection="column"
       alignItems="center"
       id="projects"
     >
-      <Heading mb={{ base: "10", md: "20" }}>PROYECTOS</Heading>
+      <Img src={Cereza.src} w="12" />
+      <Heading mb={{ base: "10", md: "20" }} mt="40">
+        PROYECTOS
+      </Heading>
       <Animation>
         <Project
           title="Frères"

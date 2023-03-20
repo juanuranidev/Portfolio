@@ -53,7 +53,7 @@ export default function Navbar() {
                 },
               }}
             >
-              <Link to="about" smooth={true} duration={500} offset={-100}>
+              <Link to="about" smooth={true} duration={500} offset={100}>
                 Sobre mi
               </Link>
             </Button>
@@ -68,7 +68,7 @@ export default function Navbar() {
                 },
               }}
             >
-              <Link to="experience" smooth={true} duration={500} offset={-100}>
+              <Link to="experience" smooth={true} duration={500} offset={100}>
                 Experiencia
               </Link>
             </Button>
@@ -83,7 +83,7 @@ export default function Navbar() {
                 },
               }}
             >
-              <Link to="projects" smooth={true} duration={500} offset={-100}>
+              <Link to="projects" smooth={true} duration={500} offset={100}>
                 Proyectos
               </Link>
             </Button>
@@ -128,7 +128,7 @@ export default function Navbar() {
             to="about"
             smooth={true}
             duration={500}
-            offset={-300}
+            offset={-80}
             onClick={onClose}
           >
             <Text
@@ -137,7 +137,6 @@ export default function Navbar() {
               justifyContent="center"
               fontWeight="600"
               h="4rem"
-              // bg="red"
               variant="link"
               color="#000000"
               _hover={{ textDecoration: "none" }}
@@ -151,12 +150,11 @@ export default function Navbar() {
               Sobre mi
             </Text>
           </Link>
-
           <Link
             to="experience"
             smooth={true}
             duration={500}
-            offset={-300}
+            offset={-80}
             onClick={onClose}
           >
             <Text
@@ -165,7 +163,6 @@ export default function Navbar() {
               justifyContent="center"
               fontWeight="600"
               h="4rem"
-              // bg="red"
               variant="link"
               color="#000000"
               _hover={{ textDecoration: "none" }}
@@ -179,12 +176,11 @@ export default function Navbar() {
               Experiencia
             </Text>
           </Link>
-
           <Link
             to="projects"
             smooth={true}
             duration={500}
-            offset={-300}
+            offset={-80}
             onClick={onClose}
           >
             <Text
@@ -193,7 +189,6 @@ export default function Navbar() {
               justifyContent="center"
               fontWeight="600"
               h="4rem"
-              // bg="red"
               variant="link"
               color="#000000"
               _hover={{ textDecoration: "none" }}
