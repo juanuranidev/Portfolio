@@ -13,11 +13,11 @@ import {
 export default function Project({
   title,
   image,
-  description,
-  hasRightImage,
-  technologies,
-  repository,
   website,
+  repository,
+  description,
+  technologies,
+  hasRightImage,
 }) {
   return (
     <Flex
@@ -66,24 +66,34 @@ export default function Project({
           <Text fontSize={{ base: "md", md: "lg" }} fontWeight="400" mb="5">
             {description}
           </Text>
-          <HStack mb="5">
+          <Flex
+            flexWrap="wrap"
+            spacing="2"
+            justifyContent={{ base: "center" }}
+            mb="5"
+          >
             {technologies.map((technology, index) => (
               <Text
                 p="2"
-                px="5"
+                mr="2"
+                mb="2"
+                w={{ base: "6rem", md: "6.5rem" }}
                 key={index}
                 shadow="sm"
+                display="flex"
                 bg="#e0e0e0"
-                fontSize="sm"
+                fontSize={{ base: "0.8rem", md: "sm" }}
                 display="flex"
                 fontWeight="700"
                 borderRadius="md"
+                textAlign="center"
                 alignItems="center"
+                justifyContent="center"
               >
                 {technology}
               </Text>
             ))}
-          </HStack>
+          </Flex>
         </Flex>
         <ButtonGroup
           spacing="5"
