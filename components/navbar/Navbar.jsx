@@ -1,18 +1,13 @@
 import React from "react";
 import {
-  Container,
   Flex,
-  HStack,
   Text,
-  Button,
-  useDisclosure,
   Image,
+  HStack,
+  Button,
   Collapse,
-  Box,
-  IconButton,
-  Stack,
-  VStack,
-  Divider,
+  Container,
+  useDisclosure,
 } from "@chakra-ui/react";
 import OpenMenu from "../../assets/icons/OpenMenu.png";
 import CloseMenu from "../../assets/icons/CloseMenu.png";

@@ -5,7 +5,6 @@ import {
   Flex,
   Text,
   Image,
-  HStack,
   Button,
   ButtonGroup,
 } from "@chakra-ui/react";
@@ -83,7 +82,6 @@ export default function Project({
                 display="flex"
                 bg="#e0e0e0"
                 fontSize={{ base: "0.8rem", md: "sm" }}
-                display="flex"
                 fontWeight="700"
                 borderRadius="md"
                 textAlign="center"
