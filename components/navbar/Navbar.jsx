@@ -1,59 +1,219 @@
 import React from "react";
-import { Container, Flex, HStack, Text, Button } from "@chakra-ui/react";
+import {
+  Container,
+  Flex,
+  HStack,
+  Text,
+  Button,
+  useDisclosure,
+  Image,
+  Collapse,
+  Box,
+  IconButton,
+  Stack,
+  VStack,
+  Divider,
+} from "@chakra-ui/react";
+import OpenMenu from "../../assets/icons/OpenMenu.png";
+import CloseMenu from "../../assets/icons/CloseMenu.png";
 import { Link } from "react-scroll";
 
 export default function Navbar() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
-    <Container p="5" borderRadius="md" maxW="container.xl">
-      <Flex justifyContent="space-between">
+    <Container
+      maxW="container.full"
+      shadow="md"
+      position="sticky"
+      bg="#ffffff"
+      zIndex="10"
+      top="0"
+      m="0"
+      w="100%"
+      p="5"
+      pb={isOpen ? "0" : "5"}
+      display="flex"
+      flexDirection={{ base: "column", md: "row" }}
+      justifyContent="space-between"
+    >
+      <Container
+        borderRadius="md"
+        maxW="container.xl"
+        display={{ base: "none", md: "flex" }}
+        justifyContent="space-between"
+        w="100%"
+      >
+        <Flex justifyContent="space-between" w="100%">
+          <Text>Marca</Text>
+          <HStack spacing="10">
+            <Button
+              variant="link"
+              color="#000000"
+              _hover={{ textDecoration: "none" }}
+              animation={{
+                transition: "transform 0.3s",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
+              }}
+            >
+              <Link to="about" smooth={true} duration={500} offset={-100}>
+                Sobre mi
+              </Link>
+            </Button>
+            <Button
+              variant="link"
+              color="#000000"
+              _hover={{ textDecoration: "none" }}
+              animation={{
+                transition: "transform 0.3s",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
+              }}
+            >
+              <Link to="experience" smooth={true} duration={500} offset={-100}>
+                Experiencia
+              </Link>
+            </Button>
+            <Button
+              variant="link"
+              color="#000000"
+              _hover={{ textDecoration: "none" }}
+              animation={{
+                transition: "transform 0.3s",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
+              }}
+            >
+              <Link to="projects" smooth={true} duration={500} offset={-100}>
+                Proyectos
+              </Link>
+            </Button>
+            <Button
+              variant="link"
+              color="#000000"
+              _hover={{ textDecoration: "none" }}
+              css={{
+                transition: "transform 0.3s",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
+              }}
+            >
+              Contacto
+            </Button>
+          </HStack>
+        </Flex>
+      </Container>
+      <Flex
+        w="100%"
+        justifyContent="space-between"
+        display={{ base: "flex", md: "none" }}
+        alignItems="center"
+      >
         <Text>Marca</Text>
-        <HStack spacing="10">
-          <Button
-            variant="link"
-            color="#000000"
-            _hover={{ textDecoration: "none" }}
-            animation={{
-              transition: "transform 0.3s",
-              "&:hover": {
-                transform: "scale(1.05)",
-              },
-            }}
+
+        {isOpen ? (
+          <Image src={CloseMenu.src} w="7" onClick={onClose} />
+        ) : (
+          <Image src={OpenMenu.src} w="6" onClick={onOpen} />
+        )}
+      </Flex>
+      <Collapse in={isOpen} animateOpacity>
+        <Flex
+          flexDirection="column"
+          justifyContent="space-between"
+          w="100%"
+          textAlign="center"
+        >
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            offset={-300}
+            onClick={onClose}
           >
-            <Link to="about" smooth={true} duration={500}>
+            <Text
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              fontWeight="600"
+              h="4rem"
+              // bg="red"
+              variant="link"
+              color="#000000"
+              _hover={{ textDecoration: "none" }}
+              animation={{
+                transition: "transform 0.3s",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
+              }}
+            >
               Sobre mi
-            </Link>
-          </Button>
-          <Button
-            variant="link"
-            color="#000000"
-            _hover={{ textDecoration: "none" }}
-            animation={{
-              transition: "transform 0.3s",
-              "&:hover": {
-                transform: "scale(1.05)",
-              },
-            }}
+            </Text>
+          </Link>
+
+          <Link
+            to="experience"
+            smooth={true}
+            duration={500}
+            offset={-300}
+            onClick={onClose}
           >
-            <Link to="experience" smooth={true} duration={500}>
+            <Text
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              fontWeight="600"
+              h="4rem"
+              // bg="red"
+              variant="link"
+              color="#000000"
+              _hover={{ textDecoration: "none" }}
+              animation={{
+                transition: "transform 0.3s",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
+              }}
+            >
               Experiencia
-            </Link>
-          </Button>
-          <Button
-            variant="link"
-            color="#000000"
-            _hover={{ textDecoration: "none" }}
-            animation={{
-              transition: "transform 0.3s",
-              "&:hover": {
-                transform: "scale(1.05)",
-              },
-            }}
+            </Text>
+          </Link>
+
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+            offset={-300}
+            onClick={onClose}
           >
-            <Link to="projects" smooth={true} duration={500}>
+            <Text
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              fontWeight="600"
+              h="4rem"
+              // bg="red"
+              variant="link"
+              color="#000000"
+              _hover={{ textDecoration: "none" }}
+              animation={{
+                transition: "transform 0.3s",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
+              }}
+            >
               Proyectos
-            </Link>
-          </Button>
-          <Button
+            </Text>
+          </Link>
+          {/* <Button
+            onClick={onClose}
             variant="link"
             color="#000000"
             _hover={{ textDecoration: "none" }}
@@ -65,9 +225,9 @@ export default function Navbar() {
             }}
           >
             Contacto
-          </Button>
-        </HStack>
-      </Flex>
+          </Button> */}
+        </Flex>
+      </Collapse>
     </Container>
   );
 }

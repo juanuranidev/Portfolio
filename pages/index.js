@@ -10,7 +10,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <Container maxW="full">
+    <Container maxW="full" p="0">
       <Head>
         <title>Juan Urani - Portfolio</title>
         <meta name="description" content="Juan Urani - Portfolio" />
