@@ -83,8 +83,8 @@ export default function Skills() {
           <Animation key={index}>
             <MotionFlex
               p="3"
-              mb="5"
-              mx="5"
+              mb={{ base: "2", md: "5" }}
+              mx={{ base: "2", md: "5" }}
               shadow="sm"
               fontWeight="700"
               borderRadius="md"
@@ -104,8 +104,10 @@ export default function Skills() {
                 },
               }}
             >
-              <Img src={icon.link} w="10" />
-              <Text ml="2">{icon.name}</Text>
+              <Img src={icon.link} w={{ base: "5", md: "10" }} />
+              <Text ml="2" fontSize={{ base: "sm", md: "md" }}>
+                {icon.name}
+              </Text>
             </MotionFlex>
           </Animation>
         ))}

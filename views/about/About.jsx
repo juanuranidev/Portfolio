@@ -8,6 +8,7 @@ import {
   VStack,
   Flex,
   ButtonGroup,
+  Box,
   Button,
   Link,
 } from "@chakra-ui/react";
@@ -25,46 +26,86 @@ export default function About() {
       id="about"
     >
       <Heading mb="40">SOMBRE MI</Heading>
-      <Flex>
-        <Img src={ProfilePicture.src} borderRadius="lg" w="40%" mr="20" />
-        <Flex flexDirection="column" w="60%" alignItems="flex-start">
+      <Flex
+        flexDirection={{ base: "column", lg: "row" }}
+        alignItems="center"
+        justifyContent="space-evenly"
+        w="100%"
+      >
+        <Flex
+          w={{ base: "100%", lg: "20rem" }}
+          mr={{ base: "0", lg: "10" }}
+          mb={{ base: "10", lg: "0" }}
+        >
+          <Animation>
+            <Img src={ProfilePicture.src} shadow="md" borderRadius="lg" />
+          </Animation>
+        </Flex>
+        <Flex
+          flexDirection="column"
+          w={{ base: "100%", lg: "30rem" }}
+          alignItems={{ base: "center", lg: "flex-start" }}
+          textAlign={{ base: "justify", lg: "justify" }}
+        >
           <Animation>
             <Text fontSize="4xl" fontWeight="700" mb="2">
               Juan Urani
             </Text>
           </Animation>
           <Animation>
-            <Text mb="5">
+            <Text mb="5" fontSize="md">
               Con más de un año de experiencia escribiendo código me considero
-              una persona proactiva y con muchas ansias de seguir aprendiendo y
-              adentrarme en esta hermosa industria.
+              una persona proactiva, con muchas ansias de seguir aprendiendo y
+              adentrándome en esta hermosa industria.
             </Text>
           </Animation>
           <Animation>
-            <Text mb="5">
-              Apasionado tanto por trabajar en proyectos innovadores que
-              incluyan un excelente equipo, así como también sacar mi "Indie
-              Hacker" dentro mío y construir aplicaciones que cambien la vida de
-              las personas mientras construyo un negocio en base a ellas.
+            <Text mb="10" fontSize="md">
+              Con muchas ganas de trabajar en proyectos innovadores junto a un
+              excelente equipo, así como también desarrollar mi perfil de "Indie
+              Hacker" y construir aplicaciones que mejoren la vida de las
+              personas mientras construyo un negocio en base a ellas.
             </Text>
           </Animation>
           <ButtonGroup spacing="5">
             <Animation>
-              <Button variant="outline" colorScheme="linkedin">
-                <Link
-                  href="https://www.linkedin.com/in/juanurani/"
-                  target="_blank"
+              <Link
+                href="https://www.linkedin.com/in/juanurani/"
+                target="_blank"
+              >
+                <Button
+                  variant="outline"
+                  colorScheme="linkedin"
+                  shadow="sm"
+                  w={{ base: "100%", md: "8rem", lg: "9.2rem" }}
                 >
                   LinkedIn
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </Animation>
             <Animation>
-              <Button variant="outline" colorScheme="linkedin">
-                <Link href="https://github.com/juanuranidev" target="_blank">
+              <Link href="https://github.com/juanuranidev" target="_blank">
+                <Button
+                  variant="outline"
+                  colorScheme="linkedin"
+                  shadow="sm"
+                  w={{ base: "100%", md: "8rem", lg: "9.2rem" }}
+                >
                   GitHub
-                </Link>
-              </Button>
+                </Button>
+              </Link>
+            </Animation>
+            <Animation>
+              <Link href="mailto:juanignaciouranimm@gmail.com" target="_blank">
+                <Button
+                  variant="outline"
+                  colorScheme="linkedin"
+                  shadow="sm"
+                  w={{ base: "100%", md: "8rem", lg: "9.2rem" }}
+                >
+                  Email
+                </Button>
+              </Link>
             </Animation>
           </ButtonGroup>
         </Flex>

@@ -14,11 +14,11 @@ export default function Header() {
       textAlign="center"
     >
       <Animation>
-        <Text fontSize="lg" fontWeight="600">
+        <Text fontSize={{ base: "sm", md: "md", lg: "lg" }} fontWeight="600">
           Hola, bienvenido a mi porfolio.
         </Text>
         <Text
-          fontSize="7xl"
+          fontSize={{ base: "4xl", md: "6xl", lg: "7xl" }}
           fontWeight="700"
           css={{
             backgroundColor: "#fff",
@@ -29,7 +29,7 @@ export default function Header() {
           Juan Urani
         </Text>
         <Text
-          fontSize="7xl"
+          fontSize={{ base: "4xl", md: "6xl", lg: "7xl" }}
           fontWeight="700"
           css={{
             backgroundColor: "#fff",
@@ -39,7 +39,12 @@ export default function Header() {
         >
           Frontend Developer
         </Text>
-        <Text w="100%" textAlign="right" fontWeight="700">
+        <Text
+          fontSize={{ base: "sm", md: "md", lg: "lg" }}
+          w="100%"
+          textAlign="right"
+          fontWeight="700"
+        >
           minimalista.
         </Text>
       </Animation>

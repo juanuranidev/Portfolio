@@ -16,13 +16,24 @@ export default function Experience() {
       <Heading mb="40">EXPERIENCIA</Heading>
       <Animation>
         <VStack mb="40">
-          <Text fontSize="lg" fontWeight="600" opacity="0.6">
+          <Text
+            fontSize={{ base: "md", md: "lg" }}
+            fontWeight="600"
+            opacity="0.6"
+          >
             Diciembre 2021
           </Text>
-          <Text fontSize="4xl" fontWeight="600">
+          <Text
+            fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
+            fontWeight="600"
+          >
             Mi primer commit
           </Text>
-          <Text fontSize="md" fontWeight="500">
+          <Text
+            fontSize={{ base: "sm", md: "md" }}
+            fontWeight="500"
+            w={{ base: "100&", md: "45rem", lg: "60rem" }}
+          >
             El 29 de diciembre de 2021 inicié mi trayectoria para convertirme en
             un ingeniero de software con una sólida determinación y un fuerte
             compromiso para desarrollar aplicaciones que impacten positivamente
@@ -32,13 +43,24 @@ export default function Experience() {
       </Animation>
       <Animation>
         <VStack>
-          <Text fontSize="lg" fontWeight="600" opacity="0.6">
+          <Text
+            fontSize={{ base: "md", md: "lg" }}
+            fontWeight="600"
+            opacity="0.6"
+          >
             Abril 2022 - Actualidad
           </Text>
-          <Text fontSize="4xl" fontWeight="600">
+          <Text
+            fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
+            fontWeight="600"
+          >
             Frontend Develper en Ait Solutions
           </Text>
-          <Text fontSize="md" fontWeight="500">
+          <Text
+            fontSize={{ base: "sm", md: "md" }}
+            fontWeight="500"
+            w={{ base: "100&", md: "45rem", lg: "60rem" }}
+          >
             Trabajando en Boxer Gestión y Duck Gestión, sistemas de gestión que
             permiten a las empresas agilizar sus procesos de trabajo,
             administrar su inventario y facturar lo necesario para cumplir con
