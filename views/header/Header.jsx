@@ -12,6 +12,7 @@ export default function Header() {
       flexDirection="column"
       alignItems="center"
       textAlign="center"
+      id="header"
     >
       <Animation>
         <Text fontSize={{ base: "sm", md: "md", lg: "lg" }} fontWeight="600">

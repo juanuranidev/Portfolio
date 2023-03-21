@@ -8,6 +8,7 @@ import {
   Collapse,
   Container,
   useDisclosure,
+  Img,
 } from "@chakra-ui/react";
 import OpenMenu from "../../assets/icons/OpenMenu.png";
 import CloseMenu from "../../assets/icons/CloseMenu.png";
@@ -40,7 +41,21 @@ export default function Navbar() {
         w="100%"
       >
         <Flex justifyContent="space-between" w="100%">
-          <Text>Marca</Text>
+          <Button
+            variant="link"
+            color="#000000"
+            _hover={{ textDecoration: "none" }}
+            animation={{
+              transition: "transform 0.3s",
+              "&:hover": {
+                transform: "scale(1.05)",
+              },
+            }}
+          >
+            <Link to="header" smooth={true} duration={500} offset={-100}>
+              Arriba
+            </Link>
+          </Button>
           <HStack spacing="10">
             <Button
               variant="link"
@@ -110,7 +125,6 @@ export default function Navbar() {
         alignItems="center"
       >
         <Text>Marca</Text>
-
         {isOpen ? (
           <Image src={CloseMenu.src} w="7" onClick={onClose} />
         ) : (
