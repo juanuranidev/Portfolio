@@ -14,7 +14,10 @@ export default function Home() {
       <Head>
         <title>Juan Urani - Portfolio</title>
         <meta name="description" content="Juan Urani - Portfolio" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link
+          rel="icon"
+          href="https://img.icons8.com/3d-fluency/94/null/mouse--v2.png"
+        />
       </Head>
       <Navbar />
       <Header />
