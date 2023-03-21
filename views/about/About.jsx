@@ -1,21 +1,17 @@
 import React from "react";
 import {
-  Avatar,
-  Container,
-  Heading,
   Img,
   Text,
-  VStack,
   Flex,
-  ButtonGroup,
-  Box,
-  Button,
   Link,
+  Button,
+  Heading,
+  Container,
+  ButtonGroup,
 } from "@chakra-ui/react";
 import ProfilePicture from "../../assets/images/ProfilePicture.jpg";
-import Animation from "../../components/animation/Animation";
 import FideosChinos from "../../assets/icons/FideosChinos.png";
-import Image from "next/image";
+import Animation from "../../components/animation/Animation";
 
 export default function About() {
   return (

@@ -8,11 +8,10 @@ import {
   Collapse,
   Container,
   useDisclosure,
-  Img,
 } from "@chakra-ui/react";
-import OpenMenu from "../../assets/icons/OpenMenu.png";
-import CloseMenu from "../../assets/icons/CloseMenu.png";
 import { Link } from "react-scroll";
+import CloseMenu from "../../assets/icons/CloseMenu.png";
+import OpenMenu from "../../assets/icons/OpenMenu.png";
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
