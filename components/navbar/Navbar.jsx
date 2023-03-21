@@ -26,8 +26,9 @@ export default function Navbar() {
       top="0"
       m="0"
       w="100%"
-      p="5"
-      pb={isOpen ? "0" : "5"}
+      px="6"
+      py="3"
+      pb={isOpen ? "0" : "3"}
       display="flex"
       flexDirection={{ base: "column", md: "row" }}
       justifyContent="space-between"
@@ -38,23 +39,14 @@ export default function Navbar() {
         display={{ base: "none", md: "flex" }}
         justifyContent="space-between"
         w="100%"
+        p="0"
       >
         <Flex justifyContent="space-between" w="100%">
-          <Button
-            variant="link"
-            color="#000000"
-            _hover={{ textDecoration: "none" }}
-            animation={{
-              transition: "transform 0.3s",
-              "&:hover": {
-                transform: "scale(1.05)",
-              },
-            }}
-          >
-            <Link to="header" smooth={true} duration={500} offset={-100}>
-              Arriba
-            </Link>
-          </Button>
+          <Link to="header" smooth={true} duration={500} offset={-100}>
+            <Text className="name" fontSize="32" cursor="pointer">
+              Juan Urani
+            </Text>
+          </Link>
           <HStack spacing="10">
             <Button
               variant="link"
@@ -123,7 +115,11 @@ export default function Navbar() {
         display={{ base: "flex", md: "none" }}
         alignItems="center"
       >
-        <Text>Marca</Text>
+        <Link to="header" smooth={true} duration={500} offset={-100}>
+          <Text className="name" fontSize="32" cursor="pointer">
+            Juan Urani
+          </Text>
+        </Link>
         {isOpen ? (
           <Image src={CloseMenu.src} w="7" onClick={onClose} />
         ) : (
