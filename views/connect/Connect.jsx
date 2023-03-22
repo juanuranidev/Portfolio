@@ -50,7 +50,10 @@ export default function Connect() {
               }}
             >
               <Img src={connectIcon.icon} mr="2" w="12" />
-              <Text fontWeight="600" fontSize="22">
+              <Text
+                fontWeight="600"
+                fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
+              >
                 {connectIcon.name}
               </Text>
               <Img src={EnlaceExterno.src} />
