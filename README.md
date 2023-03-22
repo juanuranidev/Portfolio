@@ -1,34 +1,49 @@
 # Portfolio
-This is my personal website where i will leave information about myself like my knowledge, experience, technologies i know and my contact information.
+
+Personal website showing information about me such as my knowledge, experience, technologies I know, contact details, etc.
 
 # Demo
-https://juanurani.netlify.app/
+
+https://juanurani.vercel.app
 
 # Main Technologies
-<img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="react"><br>
-<img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" alt="SASS"><br>
-<img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" alt="netlify">
+
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Chakra](https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 # Features
-Catch a pokemon<br>
-Information about me<br>
-Technologies i know<br>
-My projects<br>
-My GitHub<br>
-My social networks and contact information<br>
-Responsive design
+
+About me<br>
+Experience<br>
+Proyects<br>
+Skills<br>
+GitHub stats<br>
 
 # Libraries
-**React for creating a modern web app 17.0.2**<br>
-npx create-react-app my-app<br>
+
+**Next for a SEO-friendly web 13.2.4**<br>
+npm create next-app my-app<br>
 https://create-react-app.dev/
 
-**SASS for styles 1.49.8**<br>
-npm install sass<br>
-https://create-react-app.dev/docs/adding-a-sass-stylesheet/
+**Next for a SEO-friendly web 13.2.4**<br>
+npx create-react-app my-app<br>
+https://nextjs.org/
 
-# My Portfolio
-https://juanurani.netlify.app/
+**Chakra-ui for styling 2.5.1**<br>
+npm i @chakra-ui/react<br>
+https://chakra-ui.com/
+
+**Framer motion for animations 10.2.5**<br>
+npm i framer-motion<br>
+https://www.framer.com/motion/
+
+**React intersection observer to know user view 9.4.3**<br>
+npm i react-intersection-observer<br>
+https://react-intersection-observer.vercel.app/?path=/docs/intro--docs
 
 # My LinkedIn
+
 https://www.linkedin.com/in/juanurani/
