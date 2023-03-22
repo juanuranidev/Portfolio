@@ -42,7 +42,7 @@ export default function Navbar() {
         p="0"
       >
         <Flex justifyContent="space-between" w="100%">
-          <Link to="header" smooth={true} duration={500} offset={-100}>
+          <Link to="header" smooth={true} duration={500} offset={100}>
             <Text className="name" fontSize="32" cursor="pointer">
               Juan Urani
             </Text>
@@ -104,7 +104,9 @@ export default function Navbar() {
                 },
               }}
             >
-              Contacto
+              <Link to="connect" smooth={true} duration={500} offset={100}>
+                Conectar
+              </Link>
             </Button>
           </HStack>
         </Flex>
@@ -211,20 +213,32 @@ export default function Navbar() {
               Proyectos
             </Text>
           </Link>
-          {/* <Button
+          <Link
+            to="connect"
+            smooth={true}
+            duration={500}
+            offset={-80}
             onClick={onClose}
-            variant="link"
-            color="#000000"
-            _hover={{ textDecoration: "none" }}
-            css={{
-              transition: "transform 0.3s",
-              "&:hover": {
-                transform: "scale(1.05)",
-              },
-            }}
           >
-            Contacto
-          </Button> */}
+            <Text
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              fontWeight="600"
+              h="4rem"
+              variant="link"
+              color="#000000"
+              _hover={{ textDecoration: "none" }}
+              animation={{
+                transition: "transform 0.3s",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
+              }}
+            >
+              Connect
+            </Text>
+          </Link>
         </Flex>
       </Collapse>
     </Container>

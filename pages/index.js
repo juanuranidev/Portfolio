@@ -7,6 +7,7 @@ import GitHub from "../views/github/GitHub";
 import Skills from "../views/skills/Skills";
 import About from "../views/about/About";
 import Head from "next/head";
+import Connect from "../views/connect/Connect";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <GitHub />
+      <Connect />
     </Container>
   );
 }
