@@ -1,13 +1,14 @@
 import { Container } from "@chakra-ui/react";
 import Experience from "../views/experience/Experience";
 import Projects from "../views/projects/Projects";
+import Connect from "../views/connect/Connect";
 import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 import Header from "../views/header/Header";
 import GitHub from "../views/github/GitHub";
 import Skills from "../views/skills/Skills";
 import About from "../views/about/About";
 import Head from "next/head";
-import Connect from "../views/connect/Connect";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <Skills />
       <GitHub />
       <Connect />
+      <Footer />
     </Container>
   );
 }
