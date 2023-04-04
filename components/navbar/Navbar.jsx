@@ -44,7 +44,7 @@ export default function Navbar() {
         <Flex justifyContent="space-between" w="100%">
           <Link
             to="header"
-            href={null}
+            href={""}
             offset={-100}
             smooth={true}
             duration={500}
@@ -67,7 +67,7 @@ export default function Navbar() {
             >
               <Link
                 to="about"
-                href={null}
+                href={""}
                 offset={100}
                 smooth={true}
                 duration={500}
@@ -87,7 +87,7 @@ export default function Navbar() {
               }}
             >
               <Link
-                href={null}
+                href={""}
                 offset={100}
                 smooth={true}
                 duration={500}
@@ -108,7 +108,7 @@ export default function Navbar() {
               }}
             >
               <Link
-                href={null}
+                href={""}
                 offset={100}
                 smooth={true}
                 duration={500}
@@ -129,7 +129,7 @@ export default function Navbar() {
               }}
             >
               <Link
-                href={null}
+                href={""}
                 offset={100}
                 to="connect"
                 smooth={true}
@@ -147,13 +147,7 @@ export default function Navbar() {
         display={{ base: "flex", md: "none" }}
         alignItems="center"
       >
-        <Link
-          to="header"
-          href={null}
-          smooth={true}
-          duration={500}
-          offset={-100}
-        >
+        <Link to="header" href={""} smooth={true} duration={500} offset={-100}>
           <Text className="name" fontSize="32" cursor="pointer">
             Juan Urani
           </Text>
@@ -173,7 +167,7 @@ export default function Navbar() {
         >
           <Link
             to="about"
-            href={null}
+            href={""}
             offset={-150}
             smooth={true}
             duration={500}
@@ -199,7 +193,7 @@ export default function Navbar() {
             </Text>
           </Link>
           <Link
-            href={null}
+            href={""}
             offset={-150}
             smooth={true}
             duration={500}
@@ -226,7 +220,7 @@ export default function Navbar() {
             </Text>
           </Link>
           <Link
-            href={null}
+            href={""}
             offset={-150}
             smooth={true}
             to="projects"
@@ -253,7 +247,7 @@ export default function Navbar() {
             </Text>
           </Link>
           <Link
-            href={null}
+            href={""}
             offset={-150}
             to="connect"
             smooth={true}
