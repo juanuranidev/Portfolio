@@ -28,10 +28,6 @@ GitHub stats<br>
 npm create next-app my-app<br>
 https://create-react-app.dev/
 
-**Next for a SEO-friendly web 13.2.4**<br>
-npx create-react-app my-app<br>
-https://nextjs.org/
-
 **Chakra-ui for styling 2.5.1**<br>
 npm i @chakra-ui/react<br>
 https://chakra-ui.com/
@@ -43,6 +39,10 @@ https://www.framer.com/motion/
 **React intersection observer to know user view 9.4.3**<br>
 npm i react-intersection-observer<br>
 https://react-intersection-observer.vercel.app/?path=/docs/intro--docs
+
+**React scroll to scroll to a view 1.8.9**<br>
+npm i react-scroll<br>
+https://www.npmjs.com/package/react-scroll
 
 # My LinkedIn
 
