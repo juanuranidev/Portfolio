@@ -79,6 +79,7 @@ export default function About() {
             <Animation>
               <Link
                 target="_blank"
+                _hover={{ textDecoration: "none" }}
                 href="https://www.linkedin.com/in/juanurani/"
               >
                 <Button
@@ -92,7 +93,11 @@ export default function About() {
               </Link>
             </Animation>
             <Animation>
-              <Link href="https://github.com/juanuranidev" target="_blank">
+              <Link
+                target="_blank"
+                _hover={{ textDecoration: "none" }}
+                href="https://github.com/juanuranidev"
+              >
                 <Button
                   shadow="sm"
                   variant="outline"
@@ -104,7 +109,11 @@ export default function About() {
               </Link>
             </Animation>
             <Animation>
-              <Link href="mailto:juanignaciouranimm@gmail.com" target="_blank">
+              <Link
+                target="_blank"
+                _hover={{ textDecoration: "none" }}
+                href="mailto:juanignaciouranimm@gmail.com"
+              >
                 <Button
                   shadow="sm"
                   variant="outline"

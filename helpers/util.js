@@ -1,5 +1,5 @@
-import GitHub from "../assets/icons/GitHub.svg";
 import LinkedIn from "../assets/icons/LinkedIn.svg";
+import GitHub from "../assets/icons/GitHub.svg";
 import Mail from "../assets/icons/Mail.svg";
 
 export const variants = {
