@@ -2,8 +2,9 @@ import React from "react";
 import { Container, Heading, Img, Flex, Text, Link } from "@chakra-ui/react";
 import { connectIcons } from "../../helpers/util";
 import { motion } from "framer-motion";
-import Cheesecake from "../../assets/icons/Cheesecake.png";
 import EnlaceExterno from "../../assets/icons/EnlaceExterno.svg";
+import Cheesecake from "../../assets/icons/Cheesecake.png";
+import Image from "next/image";
 
 export default function Connect() {
   const MotionFlex = motion(Flex);
@@ -17,7 +18,7 @@ export default function Connect() {
       maxW="container.xl"
       flexDirection="column"
     >
-      <Img
+      <Image
         width="48"
         height="48"
         loading="lazy"
