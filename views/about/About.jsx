@@ -10,33 +10,40 @@ import {
   ButtonGroup,
 } from "@chakra-ui/react";
 import ProfilePicture from "../../assets/images/ProfilePicture.jpg";
-import FideosChinos from "../../assets/icons/FideosChinos.png";
+import ChineseNoodles from "../../assets/icons/ChineseNoodles.png";
 import Animation from "../../components/animation/Animation";
+import Image from "next/image";
 
 export default function About() {
   return (
     <Container
       mt="40"
-      maxW="container.xl"
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
       id="about"
+      display="flex"
+      maxW="container.xl"
+      alignItems="center"
+      flexDirection="column"
     >
-      <Img src={FideosChinos.src} w="12" />
+      <Image
+        width="48"
+        height="48"
+        loading="lazy"
+        alt="fideos chinos"
+        src={ChineseNoodles.src}
+      />
       <Heading mb={{ base: "10", md: "20" }} mt="40">
         SOBRE MI
       </Heading>
       <Flex
-        flexDirection={{ base: "column", lg: "row" }}
+        w="100%"
         alignItems="center"
         justifyContent="space-evenly"
-        w="100%"
+        flexDirection={{ base: "column", lg: "row" }}
       >
         <Flex
-          w={{ base: "100%", lg: "20rem" }}
           mr={{ base: "0", lg: "10" }}
           mb={{ base: "10", lg: "0" }}
+          w={{ base: "100%", lg: "20rem" }}
         >
           <Animation>
             <Img src={ProfilePicture.src} shadow="md" borderRadius="lg" />
@@ -71,13 +78,13 @@ export default function About() {
           <ButtonGroup spacing="5">
             <Animation>
               <Link
-                href="https://www.linkedin.com/in/juanurani/"
                 target="_blank"
+                href="https://www.linkedin.com/in/juanurani/"
               >
                 <Button
+                  shadow="sm"
                   variant="outline"
                   colorScheme="linkedin"
-                  shadow="sm"
                   w={{ base: "100%", md: "8rem", lg: "9.2rem" }}
                 >
                   LinkedIn
@@ -87,9 +94,9 @@ export default function About() {
             <Animation>
               <Link href="https://github.com/juanuranidev" target="_blank">
                 <Button
+                  shadow="sm"
                   variant="outline"
                   colorScheme="linkedin"
-                  shadow="sm"
                   w={{ base: "100%", md: "8rem", lg: "9.2rem" }}
                 >
                   GitHub
@@ -99,9 +106,9 @@ export default function About() {
             <Animation>
               <Link href="mailto:juanignaciouranimm@gmail.com" target="_blank">
                 <Button
+                  shadow="sm"
                   variant="outline"
                   colorScheme="linkedin"
-                  shadow="sm"
                   w={{ base: "100%", md: "8rem", lg: "9.2rem" }}
                 >
                   Email

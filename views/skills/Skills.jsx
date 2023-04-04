@@ -1,22 +1,29 @@
 import React from "react";
 import { Container, Heading, Img, Flex, Text } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 import { skillsIcons } from "../../helpers/util";
+import { motion } from "framer-motion";
 import Animation from "../../components/animation/Animation";
-import Sandia from "../../assets/icons/Sandia.png";
+import Watermelon from "../../assets/icons/Watermelon.png";
+import Image from "next/image";
 
 export default function Skills() {
   const MotionFlex = motion(Flex);
 
   return (
     <Container
-      mt={{ base: "20", md: "0" }}
-      maxW="container.xl"
       display="flex"
-      flexDirection="column"
       alignItems="center"
+      flexDirection="column"
+      maxW="container.xl"
+      mt={{ base: "20", md: "0" }}
     >
-      <Img src={Sandia.src} w="12" />
+      <Image
+        width="48"
+        height="48"
+        alt="melón"
+        loading="lazy"
+        src={Watermelon.src}
+      />
       <Heading mb={{ base: "10", md: "20" }} mt="40">
         HABILIDADES
       </Heading>
@@ -25,18 +32,13 @@ export default function Skills() {
           <Animation key={index}>
             <MotionFlex
               p="3"
-              mb={{ base: "2", md: "5" }}
-              mx={{ base: "2", md: "5" }}
               shadow="sm"
               fontWeight="700"
               borderRadius="md"
               alignItems="center"
-              css={{
-                animation: "change-border-color 3s infinite",
-                border: "2px solid",
-              }}
+              mb={{ base: "2", md: "5" }}
+              mx={{ base: "2", md: "5" }}
               whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 150, damping: 10 }}
               exit={{
                 scale: 0,
                 transition: {
@@ -45,6 +47,11 @@ export default function Skills() {
                   damping: 30,
                 },
               }}
+              css={{
+                animation: "change-border-color 3s infinite",
+                border: "2px solid",
+              }}
+              transition={{ type: "spring", stiffness: 150, damping: 10 }}
             >
               <Img src={icon.link} w={{ base: "5", md: "10" }} />
               <Text ml="2" fontSize={{ base: "sm", md: "md" }}>

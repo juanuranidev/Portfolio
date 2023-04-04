@@ -1,41 +1,48 @@
 import React from "react";
-import { Container, Heading, Text, VStack, Img } from "@chakra-ui/react";
+import { Container, Heading, Text, VStack } from "@chakra-ui/react";
 import Animation from "../../components/animation/Animation";
-import Hamburguesa from "../../assets/icons/Hamburguesa.png";
+import Hamburger from "../../assets/icons/Hamburger.png";
+import Image from "next/image";
 
 export default function Experience() {
   return (
     <Container
       mt="40"
-      maxW="container.xl"
       display="flex"
-      flexDirection="column"
-      alignItems="center"
-      textAlign="center"
       id="experience"
+      maxW="container.xl"
+      textAlign="center"
+      alignItems="center"
+      flexDirection="column"
     >
-      <Img src={Hamburguesa.src} w="12" />
+      <Image
+        width="48"
+        height="48"
+        loading="lazy"
+        alt="hamburguesa"
+        src={Hamburger.src}
+      />
       <Heading mb={{ base: "10", md: "20" }} mt="40">
         EXPERIENCIA
       </Heading>
       <Animation>
         <VStack mb={{ base: "20", md: "40" }}>
           <Text
-            fontSize={{ base: "md", md: "lg" }}
-            fontWeight="600"
             opacity="0.6"
+            fontWeight="600"
+            fontSize={{ base: "md", md: "lg" }}
           >
             Diciembre 2021
           </Text>
           <Text
-            fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
             fontWeight="600"
+            fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
           >
             Mi primer commit
           </Text>
           <Text
-            fontSize={{ base: "sm", md: "md" }}
             fontWeight="500"
+            fontSize={{ base: "sm", md: "md" }}
             w={{ base: "100&", md: "45rem", lg: "60rem" }}
           >
             El 29 de diciembre de 2021 inicié mi trayectoria para convertirme en
@@ -48,21 +55,21 @@ export default function Experience() {
       <Animation>
         <VStack>
           <Text
-            fontSize={{ base: "md", md: "lg" }}
-            fontWeight="600"
             opacity="0.6"
+            fontWeight="600"
+            fontSize={{ base: "md", md: "lg" }}
           >
             Abril 2022 - Actualidad
           </Text>
           <Text
-            fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
             fontWeight="600"
+            fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
           >
             Frontend Develper en Ait Solutions
           </Text>
           <Text
-            fontSize={{ base: "sm", md: "md" }}
             fontWeight="500"
+            fontSize={{ base: "sm", md: "md" }}
             w={{ base: "100&", md: "45rem", lg: "60rem" }}
           >
             Trabajando en Boxer Gestión y Duck Gestión, sistemas de gestión que
