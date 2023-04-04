@@ -7,6 +7,7 @@ import {
   Image,
   Button,
   ButtonGroup,
+  Tooltip,
 } from "@chakra-ui/react";
 
 export default function Project({
@@ -113,16 +114,30 @@ export default function Project({
             }}
             opacity={repository ? "1" : "0.5"}
           >
-            <Link
-              href={repository ? repository : null}
-              target="_blank"
-              cursor={repository ? "pointer" : "default"}
-              _hover={{
-                textDecoration: repository ? "underline" : "none",
-              }}
-            >
-              Repositorio
-            </Link>
+            {repository ? (
+              <Link
+                href={repository}
+                target="_blank"
+                cursor={repository ? "pointer" : "default"}
+                _hover={{
+                  textDecoration: repository ? "underline" : "none",
+                }}
+              >
+                Repositorio
+              </Link>
+            ) : (
+              <Tooltip label="El repositorio es privado de momento">
+                <Link
+                  href={null}
+                  cursor="default"
+                  _hover={{
+                    textDecoration: "none",
+                  }}
+                >
+                  Repositorio
+                </Link>
+              </Tooltip>
+            )}
           </Button>
           <Button variant="link" color="#000000">
             <Link href={website} target="_blank">

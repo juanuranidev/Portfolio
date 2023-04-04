@@ -39,13 +39,13 @@ export default function Projects() {
       </Animation>
       <Animation>
         <Project
-          hasRightImageW
+          hasRightImage
           repository={""}
           title="Entrenally"
           image={Project2.src}
           website={"https://entrenally.vercel.app/"}
-          technologies={["Next.js", "JavaScript", "Chakra-ui"]}
-          description="Entrenally es una aplicación de autogestión para ayudar a entrenadores a realizar las tareas relacionadas a su trabajo en un solo lugar y de manera sencilla."
+          technologies={["Next.js", "JavaScript", "Chakra-ui", "MongoDB"]}
+          description="Entrenally es una aplicación de autogestión para ayudar a entrenadores a realizar todas las tareas relacionadas a su trabajo en un solo lugar y de manera sencilla."
         />
       </Animation>
     </Container>
