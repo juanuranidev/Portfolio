@@ -45,7 +45,7 @@ export default function Navbar() {
           <Link
             to="header"
             href={null}
-            offset={100}
+            offset={-100}
             smooth={true}
             duration={500}
           >
@@ -166,15 +166,15 @@ export default function Navbar() {
       </Flex>
       <Collapse in={isOpen} animateOpacity>
         <Flex
-          flexDirection="column"
-          justifyContent="space-between"
           w="100%"
           textAlign="center"
+          flexDirection="column"
+          justifyContent="space-between"
         >
           <Link
             to="about"
             href={null}
-            offset={-80}
+            offset={-150}
             smooth={true}
             duration={500}
             onClick={onClose}
@@ -200,7 +200,7 @@ export default function Navbar() {
           </Link>
           <Link
             href={null}
-            offset={-80}
+            offset={-150}
             smooth={true}
             duration={500}
             to="experience"
@@ -227,7 +227,7 @@ export default function Navbar() {
           </Link>
           <Link
             href={null}
-            offset={-80}
+            offset={-150}
             smooth={true}
             to="projects"
             duration={500}
@@ -254,7 +254,7 @@ export default function Navbar() {
           </Link>
           <Link
             href={null}
-            offset={-80}
+            offset={-150}
             to="connect"
             smooth={true}
             duration={500}
