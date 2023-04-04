@@ -17,7 +17,13 @@ export default function Connect() {
       maxW="container.xl"
       flexDirection="column"
     >
-      <Img src={Cheesecake.src} w="12" />
+      <Img
+        width="48"
+        height="48"
+        loading="lazy"
+        alt="cheescake"
+        src={Cheesecake.src}
+      />
       <Heading mb={{ base: "10", md: "20" }} mt="40">
         CONECTAR
       </Heading>
@@ -49,14 +55,19 @@ export default function Connect() {
                 border: "2px solid",
               }}
             >
-              <Img src={connectIcon.icon} mr="2" w="12" />
+              <Img
+                mr="2"
+                w="12"
+                src={connectIcon.icon}
+                alt={connectIcon.name}
+              />
               <Text
                 fontWeight="600"
                 fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
               >
                 {connectIcon.name}
               </Text>
-              <Img src={EnlaceExterno.src} />
+              <Img src={EnlaceExterno.src} alt="enlace externo" />
             </MotionFlex>
           </Link>
         ))}
