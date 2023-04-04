@@ -18,31 +18,37 @@ export default function Navbar() {
 
   return (
     <Container
-      maxW="container.full"
-      shadow="md"
-      position="sticky"
-      bg="#ffffff"
-      zIndex="10"
-      top="0"
       m="0"
-      w="100%"
       px="6"
       py="3"
-      pb={isOpen ? "0" : "3"}
+      top="0"
+      w="100%"
+      zIndex="10"
+      shadow="md"
+      bg="#ffffff"
       display="flex"
-      flexDirection={{ base: "column", md: "row" }}
+      position="sticky"
+      maxW="container.full"
+      pb={isOpen ? "0" : "3"}
       justifyContent="space-between"
+      flexDirection={{ base: "column", md: "row" }}
     >
       <Container
+        p="0"
+        w="100%"
         borderRadius="md"
         maxW="container.xl"
-        display={{ base: "none", md: "flex" }}
         justifyContent="space-between"
-        w="100%"
-        p="0"
+        display={{ base: "none", md: "flex" }}
       >
         <Flex justifyContent="space-between" w="100%">
-          <Link to="header" smooth={true} duration={500} offset={100}>
+          <Link
+            to="header"
+            href={null}
+            offset={100}
+            smooth={true}
+            duration={500}
+          >
             <Text className="name" fontSize="32" cursor="pointer">
               Juan Urani
             </Text>
@@ -59,7 +65,13 @@ export default function Navbar() {
                 },
               }}
             >
-              <Link to="about" smooth={true} duration={500} offset={100}>
+              <Link
+                to="about"
+                href={null}
+                offset={100}
+                smooth={true}
+                duration={500}
+              >
                 Sobre mi
               </Link>
             </Button>
@@ -74,7 +86,13 @@ export default function Navbar() {
                 },
               }}
             >
-              <Link to="experience" smooth={true} duration={500} offset={100}>
+              <Link
+                href={null}
+                offset={100}
+                smooth={true}
+                duration={500}
+                to="experience"
+              >
                 Experiencia
               </Link>
             </Button>
@@ -89,7 +107,13 @@ export default function Navbar() {
                 },
               }}
             >
-              <Link to="projects" smooth={true} duration={500} offset={100}>
+              <Link
+                href={null}
+                offset={100}
+                smooth={true}
+                duration={500}
+                to="projects"
+              >
                 Proyectos
               </Link>
             </Button>
@@ -104,7 +128,13 @@ export default function Navbar() {
                 },
               }}
             >
-              <Link to="connect" smooth={true} duration={500} offset={100}>
+              <Link
+                href={null}
+                offset={100}
+                to="connect"
+                smooth={true}
+                duration={500}
+              >
                 Conectar
               </Link>
             </Button>
@@ -117,7 +147,13 @@ export default function Navbar() {
         display={{ base: "flex", md: "none" }}
         alignItems="center"
       >
-        <Link to="header" smooth={true} duration={500} offset={-100}>
+        <Link
+          to="header"
+          href={null}
+          smooth={true}
+          duration={500}
+          offset={-100}
+        >
           <Text className="name" fontSize="32" cursor="pointer">
             Juan Urani
           </Text>
@@ -137,9 +173,10 @@ export default function Navbar() {
         >
           <Link
             to="about"
+            href={null}
+            offset={-80}
             smooth={true}
             duration={500}
-            offset={-80}
             onClick={onClose}
           >
             <Text
@@ -162,10 +199,11 @@ export default function Navbar() {
             </Text>
           </Link>
           <Link
-            to="experience"
+            href={null}
+            offset={-80}
             smooth={true}
             duration={500}
-            offset={-80}
+            to="experience"
             onClick={onClose}
           >
             <Text
@@ -188,10 +226,11 @@ export default function Navbar() {
             </Text>
           </Link>
           <Link
-            to="projects"
-            smooth={true}
-            duration={500}
+            href={null}
             offset={-80}
+            smooth={true}
+            to="projects"
+            duration={500}
             onClick={onClose}
           >
             <Text
@@ -214,10 +253,11 @@ export default function Navbar() {
             </Text>
           </Link>
           <Link
+            href={null}
+            offset={-80}
             to="connect"
             smooth={true}
             duration={500}
-            offset={-80}
             onClick={onClose}
           >
             <Text
