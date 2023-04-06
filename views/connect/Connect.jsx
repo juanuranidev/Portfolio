@@ -73,6 +73,9 @@ export default function Connect() {
           </Link>
         ))}
       </Flex>
+      <Text fontWeight="700" mt="-4">
+        Disponible para trabajos freelance
+      </Text>
     </Container>
   );
 }
