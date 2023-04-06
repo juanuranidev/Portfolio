@@ -15,11 +15,6 @@ export const variants = {
 
 export const connectIcons = [
   {
-    name: "Email",
-    link: "mailto:juanignaciouranimm@gmail.com",
-    icon: Mail.src,
-  },
-  {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/juanurani/",
     icon: LinkedIn.src,
@@ -28,6 +23,11 @@ export const connectIcons = [
     name: "GitHub",
     link: "https://github.com/juanuranidev",
     icon: GitHub.src,
+  },
+  {
+    name: "Email",
+    link: "mailto:juanignaciouranimm@gmail.com",
+    icon: Mail.src,
   },
 ];
 
