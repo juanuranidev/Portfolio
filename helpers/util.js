@@ -26,7 +26,7 @@ export const connectIcons = [
   },
   {
     name: "Email",
-    link: "mailto:juanignaciouranimm@gmail.com",
+    link: "mailto:juanuranidev@gmail.com",
     icon: Mail.src,
   },
 ];
