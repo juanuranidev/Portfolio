@@ -52,16 +52,16 @@ export const experienceTranslations = {
           "El 29 de diciembre de 2021 inicié mi trayectoria para convertirme en un ingeniero de software con una sólida determinación y un fuerte compromiso para desarrollar aplicaciones que impacten positivamente la calidad de vida de las personas.",
       },
       {
-        date: " Abril 2022 - Abril 2023",
-        title: " Frontend Develper en Ait Solutions",
+        date: "Abril 2022 - Abril 2023",
+        title: "Frontend Develper en Ait Solutions",
         description:
-          "Trabajando en Boxer Gestión y Duck Gestión, sistemas de gestión que permiten a las empresas agilizar sus procesos de trabajo, administrar su inventario y facturar lo necesario para cumplir con las obligaciones tributarias. Aportando ideas para hacer crecer los productos y haciéndolas realidad con los conocimientos técnicos necesarios.",
+          "Trabajando en Boxer Gestión y Duck Gestión, sistemas de gestión que permiten a las empresas agilizar sus procesos de trabajo con funciones como administrar su inventario, facturar lo necesario para cumplir con las obligaciones tributarias, entre otros. Contribuyendo al crecimiento de ambos productos mediante ideas y el desarrollo de nuevas funcionalidades con mis conocimientos técnicos.",
       },
       {
         date: "Abril 2023 - Actualidad",
         title: "Full Stack Develper en Ait Solutions",
         description:
-          "Trabajando en Boxer Gestión y Duck Gestión, aportando ideas para hacer crecer los productos y haciéndolas realidad con los conocimientos técnicos necesarios. Además, en el area de creación, trabajando para crear el próximo producto de la empresa a partir de la creación y prueba de distintos 'mvp' (producto mínimo viable).",
+          "Trabajando en Boxer Gestión, contribuyendo al crecimiento del producto mediante ideas y el desarrollo de nuevas funcionalidades con mis conocimientos técnicos. Además, en el área de creación, trabajando para crear el próximo producto de la empresa a partir de la creación y evaluación de distintos 'mvp' (producto mínimo viable).",
       },
     ],
   },
@@ -78,13 +78,13 @@ export const experienceTranslations = {
         date: "April 2022 - April 2023",
         title: "Frontend Developer at Ait Solutions",
         description:
-          "Working on Boxer Gestión and Duck Gestión, management systems that allow companies to streamline their work processes, manage their inventory and invoice what is necessary to comply with tax obligations. Providing ideas to grow products and making them a reality with the technical expertise required.",
+          "Working at Boxer Gestión, contributing to the growth of the product through ideas and the development of new functionalities with my technical knowledge. Also, in the creation area, working to create the company's next product from the creation and evaluation of different 'mvp' (minimum viable product).",
       },
       {
         date: "April 2023 - Current",
         title: "Full Stack Develper at Ait Solutions",
         description:
-          "Working in Boxer Gestión and Duck Gestión, providing ideas to grow the products and making them a reality with the necessary technical knowledge. Also, in the area of creation, working to create the next product of the company from the creation and testing of different 'mvp' (minimum viable product).",
+          "Working on Boxer Gestión and Duck Gestión, management systems that allow companies to streamline their work processes with functions such as managing their inventory, invoicing what is necessary to comply with tax obligations, among others. Contributing to the growth of both products through ideas and the development of new functionalities with my technical knowledge.",
       },
     ],
   },
