@@ -38,7 +38,7 @@ export default function Header() {
           }}
           fontSize={{ base: "4xl", md: "6xl", lg: "7xl" }}
         >
-          Frontend Developer
+          Full Stack Developer
         </Text>
         <Text
           w="100%"

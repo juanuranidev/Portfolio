@@ -74,7 +74,7 @@ export default function Connect() {
         ))}
       </Flex>
       <Text fontWeight="700" mt="-4">
-        Disponible para trabajos freelance
+        Disponible para freelance
       </Text>
     </Container>
   );
