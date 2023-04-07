@@ -10,12 +10,12 @@ import {
   Container,
   useDisclosure,
 } from "@chakra-ui/react";
+import { navbarTranslations } from "../../util/translations";
 import { LanguageContext } from "../../context/LanguageContext";
+import { translate } from "../../util/translate";
 import { Link } from "react-scroll";
 import CloseMenu from "../../assets/icons/CloseMenu.png";
 import OpenMenu from "../../assets/icons/OpenMenu.png";
-import { translate } from "../../util/translate";
-import { navbarTranslations } from "../../util/translations";
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();

@@ -6,8 +6,8 @@ import {
   Text,
   Image,
   Button,
-  ButtonGroup,
   Tooltip,
+  ButtonGroup,
 } from "@chakra-ui/react";
 import { projectTranslations } from "../../util/translations.js";
 import { LanguageContext } from "../../context/LanguageContext";
@@ -37,14 +37,14 @@ export default function Project({
       }
     >
       <Flex
-        flexDirection="column"
         h="100%"
-        mr={hasRightImage ? "0" : { base: "0", md: "5" }}
-        ml={hasRightImage ? { base: "0", md: "5" } : "0"}
-        mb={{ base: "5", md: "0" }}
         display="flex"
         alignItems="center"
+        flexDirection="column"
         justifyContent="center"
+        mb={{ base: "5", md: "0" }}
+        ml={hasRightImage ? { base: "0", md: "5" } : "0"}
+        mr={hasRightImage ? "0" : { base: "0", md: "5" }}
       >
         <Box
           p="1"
@@ -62,9 +62,9 @@ export default function Project({
       >
         <Flex
           flexDirection="column"
-          alignItems={{ base: "center", md: "flex-start" }}
           mb={{ base: "5", md: "0" }}
           textAlign={{ base: "center", md: "left" }}
+          alignItems={{ base: "center", md: "flex-start" }}
         >
           <Text fontSize="4xl" fontWeight="600">
             {title}
@@ -83,17 +83,17 @@ export default function Project({
                 p="2"
                 mr="2"
                 mb="2"
-                w={{ base: "6rem", md: "6.5rem" }}
                 key={index}
                 shadow="sm"
-                display="flex"
                 bg="#e0e0e0"
-                fontSize={{ base: "0.8rem", md: "sm" }}
+                display="flex"
                 fontWeight="700"
                 borderRadius="md"
                 textAlign="center"
                 alignItems="center"
                 justifyContent="center"
+                w={{ base: "6rem", md: "6.5rem" }}
+                fontSize={{ base: "0.8rem", md: "sm" }}
               >
                 {technology}
               </Text>
