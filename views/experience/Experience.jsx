@@ -53,13 +53,13 @@ export default function Experience() {
         </VStack>
       </Animation>
       <Animation>
-        <VStack>
+        <VStack mb={{ base: "20", md: "40" }}>
           <Text
             opacity="0.6"
             fontWeight="600"
             fontSize={{ base: "md", md: "lg" }}
           >
-            Abril 2022 - Actualidad
+            Abril 2022 - Abril 2023
           </Text>
           <Text
             fontWeight="600"
@@ -78,6 +78,34 @@ export default function Experience() {
             las obligaciones tributarias. Aportando ideas para hacer crecer los
             productos y haciéndolas realidad con los conocimientos técnicos
             necesarios.
+          </Text>
+        </VStack>
+      </Animation>
+      <Animation>
+        <VStack>
+          <Text
+            opacity="0.6"
+            fontWeight="600"
+            fontSize={{ base: "md", md: "lg" }}
+          >
+            Abril 2023 - Actualidad
+          </Text>
+          <Text
+            fontWeight="600"
+            fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
+          >
+            Full Stack Develper en Ait Solutions
+          </Text>
+          <Text
+            fontWeight="500"
+            fontSize={{ base: "sm", md: "md" }}
+            w={{ base: "100&", md: "45rem", lg: "60rem" }}
+          >
+            Trabajando en Boxer Gestión y Duck Gestión, aportando ideas para
+            hacer crecer los productos y haciéndolas realidad con los
+            conocimientos técnicos necesarios. Además, en el area de creación,
+            logrando crear el próximo producto de la empresa a partir de la
+            creación y prueba de distintos mvp's.
           </Text>
         </VStack>
       </Animation>
