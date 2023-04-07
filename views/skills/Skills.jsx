@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Heading, Img, Flex, Text } from "@chakra-ui/react";
+import { skillsTranslations } from "../../util/translations";
+import { LanguageContext } from "../../context/LanguageContext";
 import { skillsIcons } from "../../helpers/util";
+import { translate } from "../../util/translate";
 import { motion } from "framer-motion";
 import Animation from "../../components/animation/Animation";
 import Watermelon from "../../assets/icons/Watermelon.png";
@@ -8,6 +11,7 @@ import Image from "next/image";
 
 export default function Skills() {
   const MotionFlex = motion(Flex);
+  const { language } = useContext(LanguageContext);
 
   return (
     <Container
@@ -25,7 +29,7 @@ export default function Skills() {
         src={Watermelon.src}
       />
       <Heading mb={{ base: "10", md: "20" }} mt="40">
-        HABILIDADES
+        {translate(skillsTranslations, language, "title")}
       </Heading>
       <Flex justifyContent="center" wrap="wrap">
         {skillsIcons.map((icon, index) => (

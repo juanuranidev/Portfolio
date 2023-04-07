@@ -1,20 +1,16 @@
-import React from "react";
-import {
-  Img,
-  Text,
-  Flex,
-  Link,
-  Button,
-  Heading,
-  Container,
-  ButtonGroup,
-} from "@chakra-ui/react";
+import React, { useContext } from "react";
+import { Img, Text, Flex, Heading, Container } from "@chakra-ui/react";
+import { aboutTranslations } from "../../util/translations";
+import { LanguageContext } from "../../context/LanguageContext";
+import { translate } from "../../util/translate";
 import ProfilePicture from "../../assets/images/ProfilePicture.jpg";
 import ChineseNoodles from "../../assets/icons/ChineseNoodles.png";
 import Animation from "../../components/animation/Animation";
 import Image from "next/image";
 
 export default function About() {
+  const { language } = useContext(LanguageContext);
+
   return (
     <Container
       mt="40"
@@ -32,7 +28,7 @@ export default function About() {
         src={ChineseNoodles.src}
       />
       <Heading mb={{ base: "10", md: "20" }} mt="40">
-        SOBRE MI
+        {translate(aboutTranslations, language, "title")}
       </Heading>
       <Flex
         w="100%"
@@ -62,69 +58,14 @@ export default function About() {
           </Animation>
           <Animation>
             <Text mb="5" fontSize="md">
-              Con más de un año de experiencia escribiendo código me considero
-              una persona proactiva, con muchas ansias de seguir aprendiendo y
-              adentrándome en esta hermosa industria.
+              {translate(aboutTranslations, language, "firstDescription")}
             </Text>
           </Animation>
           <Animation>
             <Text mb="10" fontSize="md">
-              Con muchas ganas de trabajar en proyectos innovadores junto a un
-              excelente equipo, así como también desarrollar mi perfil de "Indie
-              Hacker" y construir aplicaciones que mejoren la vida de las
-              personas mientras construyo un negocio en base a ellas.
+              {translate(aboutTranslations, language, "secondDescription")}
             </Text>
           </Animation>
-          <ButtonGroup spacing="5">
-            <Animation>
-              <Link
-                target="_blank"
-                _hover={{ textDecoration: "none" }}
-                href="https://www.linkedin.com/in/juanurani/"
-              >
-                <Button
-                  shadow="sm"
-                  variant="outline"
-                  colorScheme="linkedin"
-                  w={{ base: "100%", md: "8rem", lg: "9.2rem" }}
-                >
-                  LinkedIn
-                </Button>
-              </Link>
-            </Animation>
-            <Animation>
-              <Link
-                target="_blank"
-                _hover={{ textDecoration: "none" }}
-                href="https://github.com/juanuranidev"
-              >
-                <Button
-                  shadow="sm"
-                  variant="outline"
-                  colorScheme="linkedin"
-                  w={{ base: "100%", md: "8rem", lg: "9.2rem" }}
-                >
-                  GitHub
-                </Button>
-              </Link>
-            </Animation>
-            <Animation>
-              <Link
-                target="_blank"
-                _hover={{ textDecoration: "none" }}
-                href="mailto:juanignaciouranimm@gmail.com"
-              >
-                <Button
-                  shadow="sm"
-                  variant="outline"
-                  colorScheme="linkedin"
-                  w={{ base: "100%", md: "8rem", lg: "9.2rem" }}
-                >
-                  Email
-                </Button>
-              </Link>
-            </Animation>
-          </ButtonGroup>
         </Flex>
       </Flex>
     </Container>

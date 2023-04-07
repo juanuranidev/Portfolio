@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { headerTranslations } from "../../util/translations";
 import { Container, Text } from "@chakra-ui/react";
+import { LanguageContext } from "../../context/LanguageContext";
+import { translate } from "../../util/translate";
 import Animation from "../../components/animation/Animation";
 
 export default function Header() {
+  const { language } = useContext(LanguageContext);
+
   return (
     <Container
       py="40"
@@ -16,7 +21,7 @@ export default function Header() {
     >
       <Animation>
         <Text fontSize={{ base: "sm", md: "md", lg: "lg" }} fontWeight="600">
-          Hola, bienvenido a mi porfolio.
+          {translate(headerTranslations, language, "greeting")}
         </Text>
         <Text
           fontWeight="700"
@@ -46,7 +51,7 @@ export default function Header() {
           fontWeight="700"
           fontSize={{ base: "sm", md: "md", lg: "lg" }}
         >
-          minimalista.
+          {translate(headerTranslations, language, "subtitle")}
         </Text>
       </Animation>
     </Container>

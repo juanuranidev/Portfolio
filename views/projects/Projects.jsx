@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { projectsTranslations } from "../../util/translations";
 import { Container, Heading } from "@chakra-ui/react";
+import { LanguageContext } from "../../context/LanguageContext";
+import { translate } from "../../util/translate";
 import Animation from "../../components/animation/Animation";
 import Project1 from "../../assets/images/Project1.png";
 import Project2 from "../../assets/images/Project2.png";
@@ -8,6 +11,8 @@ import Cherry from "../../assets/icons/Cherry.png";
 import Image from "next/image";
 
 export default function Projects() {
+  const { language } = useContext(LanguageContext);
+
   return (
     <Container
       mt="40"
@@ -25,7 +30,7 @@ export default function Projects() {
         src={Cherry.src}
       />
       <Heading mb={{ base: "10", md: "20" }} mt="40">
-        PROYECTOS
+        {translate(projectsTranslations, language, "title")}
       </Heading>
       <Animation>
         <Project
@@ -34,7 +39,11 @@ export default function Projects() {
           website={"https://freres.netlify.app/"}
           repository={"https://github.com/juanuranidev/Freres"}
           technologies={["React.js", "TypeScript", "SASS", "Firebase"]}
-          description="Frères es una marca de ropa existente cuyos productos siempre me han gustado, pensé que su página web podía tener un mejor diseño así que me propuse a mejorarla."
+          description={translate(
+            projectsTranslations,
+            language,
+            "firstProjectDescription"
+          )}
         />
       </Animation>
       <Animation>
@@ -45,7 +54,11 @@ export default function Projects() {
           image={Project2.src}
           website={"https://entrenally.vercel.app/"}
           technologies={["Next.js", "JavaScript", "Chakra-ui", "MongoDB"]}
-          description="Entrenally es una aplicación de autogestión para ayudar a entrenadores a realizar todas las tareas relacionadas a su trabajo en un solo lugar y de manera sencilla."
+          description={translate(
+            projectsTranslations,
+            language,
+            "secondProjectDescription"
+          )}
         />
       </Animation>
     </Container>

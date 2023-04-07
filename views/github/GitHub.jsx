@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Heading, Img, Flex, Text } from "@chakra-ui/react";
+import { LanguageContext } from "../../context/LanguageContext";
 import Animation from "../../components/animation/Animation";
 import Noodles from "../../assets/icons/Noodles.png";
 import Image from "next/image";
 
 export default function GitHub() {
+  const { language } = useContext(LanguageContext);
+
   return (
     <Container
       mt="40"
@@ -35,7 +38,7 @@ export default function GitHub() {
         <Animation>
           <Img
             w={{ base: "100%", md: "15.2rem", lg: "22.9rem" }}
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=juanuranidev&layout=compact&theme=dark&text_color=ffffff&locale=es"
+            src={`https://github-readme-stats.vercel.app/api/top-langs/?username=juanuranidev&layout=compact&theme=dark&text_color=ffffff&locale=${language}`}
           />
         </Animation>
       </Flex>

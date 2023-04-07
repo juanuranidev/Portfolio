@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Box,
   Link,
@@ -9,6 +9,9 @@ import {
   ButtonGroup,
   Tooltip,
 } from "@chakra-ui/react";
+import { projectTranslations } from "../../util/translations.js";
+import { LanguageContext } from "../../context/LanguageContext";
+import { translate } from "../../util/translate.js";
 
 export default function Project({
   title,
@@ -19,6 +22,8 @@ export default function Project({
   technologies,
   hasRightImage,
 }) {
+  const { language } = useContext(LanguageContext);
+
   return (
     <Flex
       maxW="60rem"
@@ -123,7 +128,7 @@ export default function Project({
                   textDecoration: repository ? "underline" : "none",
                 }}
               >
-                Repositorio
+                {translate(projectTranslations, language, "repository")}
               </Link>
             ) : (
               <Tooltip label="El repositorio es privado de momento">
@@ -134,14 +139,14 @@ export default function Project({
                     textDecoration: "none",
                   }}
                 >
-                  Repositorio
+                  {translate(projectTranslations, language, "repository")}
                 </Link>
               </Tooltip>
             )}
           </Button>
           <Button variant="link" color="#000000">
             <Link href={website} target="_blank">
-              Página Web
+              {translate(projectTranslations, language, "website")}
             </Link>
           </Button>
         </ButtonGroup>
