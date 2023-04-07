@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Flex,
   Text,
   Image,
   HStack,
   Button,
+  Select,
   Collapse,
   Container,
   useDisclosure,
 } from "@chakra-ui/react";
+import { LanguageContext } from "../../context/LanguageContext";
 import { Link } from "react-scroll";
 import CloseMenu from "../../assets/icons/CloseMenu.png";
 import OpenMenu from "../../assets/icons/OpenMenu.png";
+import { translate } from "../../util/translate";
+import { navbarTranslations } from "../../util/translations";
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { language, setLanguage } = useContext(LanguageContext);
 
   return (
     <Container
@@ -60,7 +65,7 @@ export default function Navbar() {
               }}
             >
               <Link to="about" offset={100} smooth={true} duration={500}>
-                Sobre mi
+                {translate(navbarTranslations, language, "about")}
               </Link>
             </Button>
             <Button
@@ -75,7 +80,7 @@ export default function Navbar() {
               }}
             >
               <Link offset={100} smooth={true} duration={500} to="experience">
-                Experiencia
+                {translate(navbarTranslations, language, "experience")}
               </Link>
             </Button>
             <Button
@@ -90,7 +95,7 @@ export default function Navbar() {
               }}
             >
               <Link offset={100} smooth={true} duration={500} to="projects">
-                Proyectos
+                {translate(navbarTranslations, language, "projects")}
               </Link>
             </Button>
             <Button
@@ -105,9 +110,13 @@ export default function Navbar() {
               }}
             >
               <Link offset={100} to="connect" smooth={true} duration={500}>
-                Conectar
+                {translate(navbarTranslations, language, "connect")}
               </Link>
             </Button>
+            <Select w="15" onChange={(e) => setLanguage(e.target.value)}>
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </Select>
           </HStack>
         </Flex>
       </Container>
@@ -137,7 +146,7 @@ export default function Navbar() {
         >
           <Link
             to="about"
-            offset={-150}
+            offset={-200}
             smooth={true}
             duration={500}
             onClick={onClose}
@@ -158,11 +167,11 @@ export default function Navbar() {
                 },
               }}
             >
-              Sobre mi
+              {translate(navbarTranslations, language, "about")}
             </Text>
           </Link>
           <Link
-            offset={-150}
+            offset={-200}
             smooth={true}
             duration={500}
             to="experience"
@@ -184,11 +193,11 @@ export default function Navbar() {
                 },
               }}
             >
-              Experiencia
+              {translate(navbarTranslations, language, "experience")}
             </Text>
           </Link>
           <Link
-            offset={-150}
+            offset={-200}
             smooth={true}
             to="projects"
             duration={500}
@@ -210,7 +219,7 @@ export default function Navbar() {
                 },
               }}
             >
-              Proyectos
+              {translate(navbarTranslations, language, "projects")}
             </Text>
           </Link>
           <Link
@@ -236,9 +245,18 @@ export default function Navbar() {
                 },
               }}
             >
-              Connect
+              {translate(navbarTranslations, language, "connect")}
             </Text>
           </Link>
+          <Select
+            pb="5"
+            display="flex"
+            alignItems="center"
+            onChange={(e) => setLanguage(e.target.value)}
+          >
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+          </Select>
         </Flex>
       </Collapse>
     </Container>
