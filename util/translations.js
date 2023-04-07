@@ -46,12 +46,6 @@ export const experienceTranslations = {
     title: "EXPERIENCIA",
     experiencia: [
       {
-        date: "Diciembre 2021",
-        title: "Mi primer commit",
-        description:
-          "El 29 de diciembre de 2021 inicié mi trayectoria para convertirme en un ingeniero de software con una sólida determinación y un fuerte compromiso para desarrollar aplicaciones que impacten positivamente la calidad de vida de las personas.",
-      },
-      {
         date: "Abril 2022 - Abril 2023",
         title: "Frontend Develper en Ait Solutions",
         description:
@@ -63,28 +57,34 @@ export const experienceTranslations = {
         description:
           "Trabajando en Boxer Gestión, contribuyendo al crecimiento del producto mediante ideas y el desarrollo de nuevas funcionalidades con mis conocimientos técnicos. Además, en el área de creación, trabajando para crear el próximo producto de la empresa a partir de la creación y evaluación de distintos 'mvp' (producto mínimo viable).",
       },
+      {
+        date: "Diciembre 2021",
+        title: "Mi primer commit",
+        description:
+          "El 29 de diciembre de 2021 inicié mi trayectoria para convertirme en un ingeniero de software con una sólida determinación y un fuerte compromiso para desarrollar aplicaciones que impacten positivamente la calidad de vida de las personas.",
+      },
     ],
   },
   en: {
     title: "EXPERIENCE",
     experiencia: [
       {
-        date: "December 2021",
-        title: "My first commit",
+        date: "April 2023 - Current",
+        title: "Full Stack Develper at Ait Solutions",
         description:
-          "On December 29, 2021, I started my journey to become a software engineer with a solid determination and strong commitment to develop applications that positively impact people's quality of life.",
+          "Working at Boxer Gestión, contributing to the growth of the product through ideas and the development of new functionalities with my technical knowledge. Also, in the creation area, working to create the company's next product from the creation and evaluation of different 'mvp' (minimum viable product).",
       },
       {
         date: "April 2022 - April 2023",
         title: "Frontend Developer at Ait Solutions",
         description:
-          "Working at Boxer Gestión, contributing to the growth of the product through ideas and the development of new functionalities with my technical knowledge. Also, in the creation area, working to create the company's next product from the creation and evaluation of different 'mvp' (minimum viable product).",
+          "Working on Boxer Gestión and Duck Gestión, management systems that allow companies to streamline their work processes with functions such as managing their inventory, invoicing what is necessary to comply with tax obligations, among others. Contributing to the growth of both products through ideas and the development of new functionalities with my technical knowledge.",
       },
       {
-        date: "April 2023 - Current",
-        title: "Full Stack Develper at Ait Solutions",
+        date: "December 2021",
+        title: "My first commit",
         description:
-          "Working on Boxer Gestión and Duck Gestión, management systems that allow companies to streamline their work processes with functions such as managing their inventory, invoicing what is necessary to comply with tax obligations, among others. Contributing to the growth of both products through ideas and the development of new functionalities with my technical knowledge.",
+          "On December 29, 2021, I started my journey to become a software engineer with a solid determination and strong commitment to develop applications that positively impact people's quality of life.",
       },
     ],
   },
