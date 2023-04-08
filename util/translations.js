@@ -46,16 +46,16 @@ export const experienceTranslations = {
     title: "EXPERIENCIA",
     experiencia: [
       {
-        date: "Abril 2022 - Abril 2023",
-        title: "Frontend Develper en Ait Solutions",
-        description:
-          "Trabajando en Boxer Gestión y Duck Gestión, sistemas de gestión que permiten a las empresas agilizar sus procesos de trabajo con funciones como administrar su inventario, facturar lo necesario para cumplir con las obligaciones tributarias, entre otros. Contribuyendo al crecimiento de ambos productos mediante ideas y el desarrollo de nuevas funcionalidades con mis conocimientos técnicos.",
-      },
-      {
         date: "Abril 2023 - Actualidad",
         title: "Full Stack Develper en Ait Solutions",
         description:
           "Trabajando en Boxer Gestión, contribuyendo al crecimiento del producto mediante ideas y el desarrollo de nuevas funcionalidades con mis conocimientos técnicos. Además, en el área de creación, trabajando para crear el próximo producto de la empresa a partir de la creación y evaluación de distintos 'mvp' (producto mínimo viable).",
+      },
+      {
+        date: "Abril 2022 - Abril 2023",
+        title: "Frontend Develper en Ait Solutions",
+        description:
+          "Trabajando en Boxer Gestión y Duck Gestión, sistemas de gestión que permiten a las empresas agilizar sus procesos de trabajo con funciones como administrar su inventario, facturar lo necesario para cumplir con las obligaciones tributarias, entre otros. Contribuyendo al crecimiento de ambos productos mediante ideas y el desarrollo de nuevas funcionalidades con mis conocimientos técnicos.",
       },
       {
         date: "Diciembre 2021",

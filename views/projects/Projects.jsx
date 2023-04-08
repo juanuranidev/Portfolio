@@ -49,11 +49,11 @@ export default function Projects() {
       <Animation>
         <Project
           hasRightImage
-          repository={""}
-          title="Entrenally"
+          repository={"https://github.com/juanuranidev/DemoEntrenaly"}
+          title="Demo Entrenaly"
           image={Project2.src}
-          website={"https://entrenally.vercel.app/"}
-          technologies={["Next.js", "JavaScript", "Chakra-ui", "MongoDB"]}
+          website={"https://demo-entrenaly.vercel.app/"}
+          technologies={["Next.js", "JavaScript", "Chakra-ui"]}
           description={translate(
             projectsTranslations,
             language,
