@@ -1,17 +1,15 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Container, Heading, Img, Flex, Text, Link } from "@chakra-ui/react";
-import { connectTranslations } from "../../util/translations";
-import { LanguageContext } from "../../context/LanguageContext";
+import { useTranslation } from "react-i18next";
 import { connectIcons } from "../../helpers/util";
-import { translate } from "../../util/translate";
 import { motion } from "framer-motion";
-import EnlaceExterno from "../../assets/icons/EnlaceExterno.svg";
-import Cheesecake from "../../assets/icons/Cheesecake.png";
 import Image from "next/image";
+import Cheesecake from "../../assets/icons/Cheesecake.png";
+import EnlaceExterno from "../../assets/icons/EnlaceExterno.svg";
 
 export default function Connect() {
   const MotionFlex = motion(Flex);
-  const { language } = useContext(LanguageContext);
+  const {t: translate} = useTranslation()
 
   return (
     <Container
@@ -30,7 +28,7 @@ export default function Connect() {
         src={Cheesecake.src}
       />
       <Heading mb={{ base: "10", md: "20" }} mt="40">
-        {translate(connectTranslations, language, "title")}
+      {translate("sections.connect.title")}
       </Heading>
       <Flex
         w="100%"
@@ -56,8 +54,8 @@ export default function Connect() {
               justifyContent="space-between"
               transition={{ type: "spring", stiffness: 150, damping: 10 }}
               css={{
-                animation: "change-border-color 3s infinite",
                 border: "2px solid",
+                animation: "change-border-color 3s infinite",
               }}
             >
               <Img
@@ -78,7 +76,7 @@ export default function Connect() {
         ))}
       </Flex>
       <Text fontWeight="700" mt="-4">
-        {translate(connectTranslations, language, "freelance")}
+      {translate("sections.connect.freelance")}
       </Text>
     </Container>
   );

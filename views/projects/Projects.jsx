@@ -1,8 +1,6 @@
-import React, { useContext } from "react";
-import { projectsTranslations } from "../../util/translations";
+import React from "react";
 import { Container, Heading } from "@chakra-ui/react";
-import { LanguageContext } from "../../context/LanguageContext";
-import { translate } from "../../util/translate";
+import { useTranslation } from "react-i18next";
 import Animation from "../../components/animation/Animation";
 import Project1 from "../../assets/images/Project1.png";
 import Project2 from "../../assets/images/Project2.png";
@@ -11,7 +9,7 @@ import Cherry from "../../assets/icons/Cherry.png";
 import Image from "next/image";
 
 export default function Projects() {
-  const { language } = useContext(LanguageContext);
+  const {t: translate} = useTranslation()
 
   return (
     <Container
@@ -30,7 +28,7 @@ export default function Projects() {
         src={Cherry.src}
       />
       <Heading mb={{ base: "10", md: "20" }} mt="40">
-        {translate(projectsTranslations, language, "title")}
+      {translate("sections.projects.title")}
       </Heading>
       <Animation>
         <Project
@@ -39,26 +37,18 @@ export default function Projects() {
           website={"https://freres.netlify.app/"}
           repository={"https://github.com/juanuranidev/Freres"}
           technologies={["React.js", "TypeScript", "SASS", "Firebase"]}
-          description={translate(
-            projectsTranslations,
-            language,
-            "firstProjectDescription"
-          )}
+          description={translate("sections.projects.firstProjectDescription")}
         />
       </Animation>
       <Animation>
         <Project
           hasRightImage
-          repository={"https://github.com/juanuranidev/DemoEntrenaly"}
           title="Demo Entrenaly"
           image={Project2.src}
           website={"https://demo-entrenaly.vercel.app/"}
           technologies={["Next.js", "JavaScript", "Chakra-ui"]}
-          description={translate(
-            projectsTranslations,
-            language,
-            "secondProjectDescription"
-          )}
+          repository={"https://github.com/juanuranidev/DemoEntrenaly"}
+          description={translate("sections.projects.secondProjectDescription")}
         />
       </Animation>
     </Container>

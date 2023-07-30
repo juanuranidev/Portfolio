@@ -1,12 +1,10 @@
-import React, { useContext } from "react";
-import { headerTranslations } from "../../util/translations";
+import React from "react";
 import { Container, Text } from "@chakra-ui/react";
-import { LanguageContext } from "../../context/LanguageContext";
-import { translate } from "../../util/translate";
+import { useTranslation } from "react-i18next";
 import Animation from "../../components/animation/Animation";
 
 export default function Header() {
-  const { language } = useContext(LanguageContext);
+  const {t: translate} = useTranslation()
 
   return (
     <Container
@@ -21,13 +19,13 @@ export default function Header() {
     >
       <Animation>
         <Text fontSize={{ base: "sm", md: "md", lg: "lg" }} fontWeight="600">
-          {translate(headerTranslations, language, "greeting")}
+          {translate("sections.header.title")}
         </Text>
         <Text
           fontWeight="700"
           css={{
-            backgroundColor: "#fff",
             color: "#3792e4",
+            backgroundColor: "#fff",
             animation: "change-color 3s infinite",
           }}
           fontSize={{ base: "4xl", md: "6xl", lg: "7xl" }}
@@ -37,21 +35,21 @@ export default function Header() {
         <Text
           fontWeight="700"
           css={{
-            backgroundColor: "#fff",
             color: "#3792e4",
+            backgroundColor: "#fff",
             animation: "change-color 3s infinite",
           }}
           fontSize={{ base: "4xl", md: "6xl", lg: "7xl" }}
         >
-          Full Stack Developer
+         {translate("sections.header.subtitle")}
         </Text>
         <Text
           w="100%"
-          textAlign="right"
           fontWeight="700"
+          textAlign="right"
           fontSize={{ base: "sm", md: "md", lg: "lg" }}
         >
-          {translate(headerTranslations, language, "subtitle")}
+         {translate("sections.header.paragraph")}
         </Text>
       </Animation>
     </Container>

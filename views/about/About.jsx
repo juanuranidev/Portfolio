@@ -1,15 +1,13 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Img, Text, Flex, Heading, Container } from "@chakra-ui/react";
-import { aboutTranslations } from "../../util/translations";
-import { LanguageContext } from "../../context/LanguageContext";
-import { translate } from "../../util/translate";
+import { useTranslation } from "react-i18next";
 import ProfilePicture from "../../assets/images/ProfilePicture.jpg";
 import ChineseNoodles from "../../assets/icons/ChineseNoodles.png";
 import Animation from "../../components/animation/Animation";
 import Image from "next/image";
 
 export default function About() {
-  const { language } = useContext(LanguageContext);
+  const {t: translate} = useTranslation()
 
   return (
     <Container
@@ -28,7 +26,7 @@ export default function About() {
         src={ChineseNoodles.src}
       />
       <Heading mb={{ base: "10", md: "20" }} mt="40">
-        {translate(aboutTranslations, language, "title")}
+      {translate("sections.about.title")}
       </Heading>
       <Flex
         w="100%"
@@ -58,12 +56,12 @@ export default function About() {
           </Animation>
           <Animation>
             <Text mb="5" fontSize="md">
-              {translate(aboutTranslations, language, "firstDescription")}
+            {translate("sections.about.firstDescription")}
             </Text>
           </Animation>
           <Animation>
             <Text mb="10" fontSize="md">
-              {translate(aboutTranslations, language, "secondDescription")}
+            {translate("sections.about.secondDescription")}
             </Text>
           </Animation>
         </Flex>

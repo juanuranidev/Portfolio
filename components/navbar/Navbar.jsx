@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import Reac from "react";
 import {
   Flex,
   Text,
@@ -10,16 +10,14 @@ import {
   Container,
   useDisclosure,
 } from "@chakra-ui/react";
-import { navbarTranslations } from "../../util/translations";
-import { LanguageContext } from "../../context/LanguageContext";
-import { translate } from "../../util/translate";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
-import CloseMenu from "../../assets/icons/CloseMenu.png";
 import OpenMenu from "../../assets/icons/OpenMenu.png";
+import CloseMenu from "../../assets/icons/CloseMenu.png";
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const { language, setLanguage } = useContext(LanguageContext);
+  const { t: translate, i18n } = useTranslation();
 
   return (
     <Container
@@ -65,7 +63,7 @@ export default function Navbar() {
               }}
             >
               <Link to="about" offset={100} smooth={true} duration={500}>
-                {translate(navbarTranslations, language, "about")}
+                {translate("components.navbar.about")}
               </Link>
             </Button>
             <Button
@@ -80,7 +78,7 @@ export default function Navbar() {
               }}
             >
               <Link offset={100} smooth={true} duration={500} to="experience">
-                {translate(navbarTranslations, language, "experience")}
+                {translate("components.navbar.experience")}
               </Link>
             </Button>
             <Button
@@ -95,7 +93,7 @@ export default function Navbar() {
               }}
             >
               <Link offset={100} smooth={true} duration={500} to="projects">
-                {translate(navbarTranslations, language, "projects")}
+                {translate("components.navbar.projects")}
               </Link>
             </Button>
             <Button
@@ -110,10 +108,13 @@ export default function Navbar() {
               }}
             >
               <Link offset={100} to="connect" smooth={true} duration={500}>
-                {translate(navbarTranslations, language, "connect")}
+                {translate("components.navbar.connect")}
               </Link>
             </Button>
-            <Select w="15" onChange={(e) => setLanguage(e.target.value)}>
+            <Select
+              w="15"
+              onChange={(e) => i18n.changeLanguage(e.target.value)}
+            >
               <option value="es">ES</option>
               <option value="en">EN</option>
             </Select>
@@ -167,7 +168,7 @@ export default function Navbar() {
                 },
               }}
             >
-              {translate(navbarTranslations, language, "about")}
+              {translate("components.navbar.about")}
             </Text>
           </Link>
           <Link
@@ -193,7 +194,7 @@ export default function Navbar() {
                 },
               }}
             >
-              {translate(navbarTranslations, language, "experience")}
+              {translate("components.navbar.experience")}
             </Text>
           </Link>
           <Link
@@ -219,7 +220,7 @@ export default function Navbar() {
                 },
               }}
             >
-              {translate(navbarTranslations, language, "projects")}
+              {translate("components.navbar.projects")}
             </Text>
           </Link>
           <Link
@@ -245,14 +246,14 @@ export default function Navbar() {
                 },
               }}
             >
-              {translate(navbarTranslations, language, "connect")}
+              {translate("components.navbar.connect")}
             </Text>
           </Link>
           <Select
             pb="5"
             display="flex"
             alignItems="center"
-            onChange={(e) => setLanguage(e.target.value)}
+            onChange={(e) => i18n.changeLanguage(e.target.value)}
           >
             <option value="es">ES</option>
             <option value="en">EN</option>

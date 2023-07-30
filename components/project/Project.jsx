@@ -1,17 +1,15 @@
-import React, { useContext } from "react";
+import React from "react";
 import {
   Box,
   Link,
   Flex,
   Text,
   Image,
+  Badge,
   Button,
-  Tooltip,
   ButtonGroup,
 } from "@chakra-ui/react";
-import { projectTranslations } from "../../util/translations.js";
-import { LanguageContext } from "../../context/LanguageContext";
-import { translate } from "../../util/translate.js";
+import { useTranslation } from "react-i18next";
 
 export default function Project({
   title,
@@ -22,7 +20,7 @@ export default function Project({
   technologies,
   hasRightImage,
 }) {
-  const { language } = useContext(LanguageContext);
+  const { t: translate } = useTranslation();
 
   return (
     <Flex
@@ -73,30 +71,20 @@ export default function Project({
             {description}
           </Text>
           <Flex
-            flexWrap="wrap"
-            spacing="2"
-            justifyContent={{ base: "center" }}
             mb="5"
+            gap="2"
+            flexWrap="wrap"
+            justifyContent={{ base: "center" }}
           >
-            {technologies.map((technology, index) => (
-              <Text
+            {technologies.map((technology) => (
+              <Badge
                 p="2"
-                mr="2"
-                mb="2"
-                key={index}
-                shadow="sm"
-                bg="#e0e0e0"
-                display="flex"
-                fontWeight="700"
+                key={technology}
                 borderRadius="md"
-                textAlign="center"
-                alignItems="center"
-                justifyContent="center"
-                w={{ base: "6rem", md: "6.5rem" }}
-                fontSize={{ base: "0.8rem", md: "sm" }}
+                colorScheme="blue"
               >
                 {technology}
-              </Text>
+              </Badge>
             ))}
           </Flex>
         </Flex>
@@ -119,34 +107,20 @@ export default function Project({
             }}
             opacity={repository ? "1" : "0.5"}
           >
-            {repository ? (
-              <Link
-                href={repository}
-                target="_blank"
-                cursor={repository ? "pointer" : "default"}
-                _hover={{
-                  textDecoration: repository ? "underline" : "none",
-                }}
-              >
-                {translate(projectTranslations, language, "repository")}
-              </Link>
-            ) : (
-              <Tooltip label="El repositorio es privado de momento">
-                <Link
-                  href={null}
-                  cursor="default"
-                  _hover={{
-                    textDecoration: "none",
-                  }}
-                >
-                  {translate(projectTranslations, language, "repository")}
-                </Link>
-              </Tooltip>
-            )}
+            <Link
+              href={repository}
+              target="_blank"
+              cursor={repository ? "pointer" : "default"}
+              _hover={{
+                textDecoration: repository ? "underline" : "none",
+              }}
+            >
+              {translate("components.project.buttonRepository")}
+            </Link>
           </Button>
           <Button variant="link" color="#000000">
             <Link href={website} target="_blank">
-              {translate(projectTranslations, language, "website")}
+              {translate("components.project.buttonWebpage")}
             </Link>
           </Button>
         </ButtonGroup>
