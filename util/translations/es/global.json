@@ -1,3 +1,50 @@
 {
-  "sections": {}
+  "sections": {
+    "header": {
+      "title": "Hola, bienvenido a mi porfolio.",
+      "subtitle": "FullStack Developer",
+      "paragraph": "minimalista."
+    },
+    "about": {
+      "title": "SOBRE MI",
+      "firstDescription": "Con más de un año de experiencia escribiendo código me considero una persona proactiva, con muchas ansias de seguir aprendiendo y adentrándome en esta hermosa industria.",
+      "secondDescription": "Con muchas ganas de trabajar en proyectos innovadores junto a un excelente equipo, así como también desarrollar mi perfil de 'Indie Hacker' y construir aplicaciones que mejoren la vida de las personas mientras construyo un negocio en base a ellas."
+    },
+    "experience": {
+      "title": "EXPERIENCIA",
+      "firstExperienceDate": "Abril 2023 - Actualidad",
+      "firstExperienceTitle": "Full Stack Develper en Ait Solutions",
+      "firstExperienceDescription": "Planeada la estructura del proyecto, encargado principal de la parte del Frontend del proyecto, desarrollado funcionalidades FullStack con código limpio y eficiente, creado el template del producto así también como nuevas interfaces amigables y funcionales, trabajado junto a un pequeño equipo logrando grandes resultados, constantemente pensando creativamente para planear y crear nuevas funcionalidades que ayuden a crecer el producto, todo lo anterior usando las siguientes herramientas: Nextjs, JavaScript, Mantine, Figma, Django, Python, SQL, API.",
+      "secondExperienceDate": "Abril 2022 - Abril 2023",
+      "secondExperienceTitle": "Frontend Develper en Ait Solutions",
+      "secondExperienceDescription": "Desarrollado nuevas funcionalidades con código limpio, trabajado junto a equipos dando y recibiendo feedback para crecer juntos, creadas nuevas interfaces de usuario funcionales y adaptadas al producto, mejorada la experiencia del usuario en las pantallas existentes, ayudado a compañeros a resolver problemas y dudas, todo lo anterior usando las siguientes herramientas: React, JavaScript, Material-UI, Figma, API, Scrum.",
+      "thirdExperienceDate": "Diciembre 2021",
+      "thirdExperienceTitle": "Mi primer commit",
+      "thirdExperienceDescription": "El 29 de diciembre de 2021 inicié mi trayectoria para convertirme en un ingeniero de software con una sólida determinación y un fuerte compromiso para desarrollar aplicaciones que impacten positivamente la calidad de vida de las personas."
+    },
+    "projects": {
+      "title": "PROYECTOS",
+      "firstProjectDescription": "Frères es una marca de ropa existente cuyos productos siempre me han gustado, pensé que su página web podía tener un mejor diseño así que me propuse a mejorarla.",
+      "secondProjectDescription": "Entrenally es una aplicación de autogestión para ayudar a entrenadores a realizar todas las tareas relacionadas a su trabajo en un solo lugar y de manera sencilla."
+    },
+    "skills": {
+      "title": "HABILIDADES"
+    },
+    "connect": {
+      "title": "CONECTAR",
+      "freelance": "Disponible para freelance"
+    }
+  },
+  "components": {
+    "navbar": {
+      "about": "Sobre Mi",
+      "experience": "Experiencia",
+      "projects": "Proyectos",
+      "connect": "Conectar"
+    },
+    "project": {
+      "buttonRepository": "Repositorio",
+      "buttonWebpage": "Página web"
+    }
+  }
 }
