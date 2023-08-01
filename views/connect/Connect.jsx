@@ -1,5 +1,13 @@
 import React from "react";
-import { Container, Heading, Img, Flex, Text, Link } from "@chakra-ui/react";
+import {
+  Container,
+  Heading,
+  Img,
+  Flex,
+  Text,
+  Link,
+  Box,
+} from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { connectIcons } from "../../helpers/util";
 import { motion } from "framer-motion";
@@ -9,7 +17,7 @@ import EnlaceExterno from "../../assets/icons/EnlaceExterno.svg";
 
 export default function Connect() {
   const MotionFlex = motion(Flex);
-  const {t: translate} = useTranslation()
+  const { t: translate } = useTranslation();
 
   return (
     <Container
@@ -28,7 +36,7 @@ export default function Connect() {
         src={Cheesecake.src}
       />
       <Heading mb={{ base: "10", md: "20" }} mt="40">
-      {translate("sections.connect.title")}
+        {translate("sections.connect.title")}
       </Heading>
       <Flex
         w="100%"
@@ -75,9 +83,25 @@ export default function Connect() {
           </Link>
         ))}
       </Flex>
-      <Text fontWeight="700" mt="-4">
-      {translate("sections.connect.freelance")}
-      </Text>
+      <Flex
+        p="2"
+        align="center"
+        borderRadius="lg"
+        className="freelance_available_div"
+      >
+        <Box
+          h="5"
+          w="5"
+          borderRadius="lg"
+          className="freelance_available_div_circle"
+        />
+        <Text className="freelance_available_div_text" ml="2" fontWeight="700">
+          {translate("sections.connect.freelance")}
+        </Text>
+        <Link className="freelance_available_div_link" ml="2" fontWeight="700">
+          juanuranidev@gmail.com
+        </Link>
+      </Flex>
     </Container>
   );
 }

@@ -1,0 +1,41 @@
+.freelance_available_div {
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.freelance_available_div:hover {
+  background-color: #313131;
+  transition: all 0.25s;
+}
+
+.freelance_available_div_circle {
+  background-color: #00af11;
+  transition: all 0.25s;
+}
+
+.freelance_available_div:hover .freelance_available_div_circle {
+  background-color: #48fb47;
+  transition: all 0.25s;
+}
+
+.freelance_available_div_text {
+  color: #000000;
+}
+
+.freelance_available_div:hover .freelance_available_div_text {
+  color: #ffffff;
+  transition: all 0.25s;
+  opacity: 0;
+  position: absolute;
+}
+
+.freelance_available_div_link {
+  opacity: 0;
+}
+
+.freelance_available_div:hover .freelance_available_div_link {
+  color: #ffffff;
+  transition: all 0.25s;
+  display: flex;
+  opacity: 1;
+}
