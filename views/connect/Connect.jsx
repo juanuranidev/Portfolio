@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Cheesecake from "../../assets/icons/Cheesecake.png";
 import EnlaceExterno from "../../assets/icons/EnlaceExterno.svg";
+import Mail from "../../assets/icons/Mail.png";
 
 export default function Connect() {
   const MotionFlex = motion(Flex);
@@ -87,20 +88,19 @@ export default function Connect() {
         p="2"
         align="center"
         borderRadius="lg"
-        className="freelance_available_div"
+        className="freelance_available"
       >
-        <Box
-          h="5"
-          w="5"
-          borderRadius="lg"
-          className="freelance_available_div_circle"
-        />
-        <Text className="freelance_available_div_text" ml="2" fontWeight="700">
-          {translate("sections.connect.freelance")}
-        </Text>
-        <Link className="freelance_available_div_link" ml="2" fontWeight="700">
-          juanuranidev@gmail.com
-        </Link>
+        <Flex className="freelance_available_div">
+          <Box borderRadius="lg" className="freelance_available_div_circle" />
+          <Text className="freelance_available_div_text" fontWeight="700">
+            {translate("sections.connect.freelance")}
+          </Text>
+          <Link className="freelance_available_div_link" fontWeight="700">
+            juanuranidev@gmail.com
+          </Link>
+        </Flex>
+        <Image src={EnlaceExterno.src} width="20" height="20" />
+        <Image src={Mail.src} width="20" height="20" />
       </Flex>
     </Container>
   );
