@@ -90,17 +90,23 @@ export default function Connect() {
         borderRadius="lg"
         className="freelance_available"
       >
-        <Flex className="freelance_available_div">
-          <Box borderRadius="lg" className="freelance_available_div_circle" />
-          <Text className="freelance_available_div_text" fontWeight="700">
-            {translate("sections.connect.freelance")}
-          </Text>
-          <Link className="freelance_available_div_link" fontWeight="700">
-            juanuranidev@gmail.com
-          </Link>
-        </Flex>
-        <Image src={EnlaceExterno.src} width="20" height="20" />
-        <Image src={Mail.src} width="20" height="20" />
+        <Box borderRadius="lg" className="freelance_available_div_circle" />
+        <Text className="freelance_available_div_text" fontWeight="700">
+          {translate("sections.connect.freelance")}
+        </Text>
+
+        <Image
+          src={EnlaceExterno.src}
+          width="20"
+          height="20"
+          className="freelance_available_link"
+        />
+        <Image
+          src={Mail.src}
+          width="20"
+          height="20"
+          className="freelance_available_mail"
+        />
       </Flex>
     </Container>
   );
