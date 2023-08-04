@@ -86,21 +86,27 @@ export default function Connect() {
       </Flex>
       <Flex
         p="2"
+        gap="2"
+        width="17rem"
         align="center"
         borderRadius="lg"
         className="freelance_available"
       >
-        <Box borderRadius="lg" className="freelance_available_div_circle" />
-        <Text className="freelance_available_div_text" fontWeight="700">
-          {translate("sections.connect.freelance")}
-        </Text>
-
-        <Image
-          src={EnlaceExterno.src}
-          width="20"
-          height="20"
-          className="freelance_available_link"
+        <Box
+          width="0.5rem"
+          height="0.5rem"
+          borderRadius="lg"
+          bgColor="#00af11"
+          className="freelance_available_circle"
         />
+        <Link
+          cursor="pointer"
+          fontWeight="700"
+          className="freelance_available_text"
+          href="mailto:juanuranidev@gmail.com"
+        >
+          {translate("sections.connect.freelance")}
+        </Link>
         <Image
           src={Mail.src}
           width="20"
