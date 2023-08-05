@@ -108,9 +108,9 @@ export default function Connect() {
           {translate("sections.connect.freelance")}
         </Link>
         <Image
-          src={Mail.src}
           width="20"
           height="20"
+          src={Mail.src}
           className="freelance_available_mail"
         />
       </Flex>
