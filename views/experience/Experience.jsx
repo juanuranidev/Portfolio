@@ -32,9 +32,9 @@ export default function Experience() {
       title: translate("sections.experience.thirdExperienceTitle"),
       description: translate("sections.experience.thirdExperienceDescription"),
 
-      date: translate("sections.experience.secondExperienceDate"),
-      title: translate("sections.experience.secondExperienceTitle"),
-      description: translate("sections.experience.secondExperienceDescription"),
+      date: translate("sections.experience.thirdExperienceDate"),
+      title: translate("sections.experience.thirdExperienceTitle"),
+      description: translate("sections.experience.thirdExperienceDescription"),
     },
   ];
 
