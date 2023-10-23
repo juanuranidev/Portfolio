@@ -4,12 +4,13 @@ import { useTranslation } from "react-i18next";
 import Animation from "../../components/animation/Animation";
 import Project1 from "../../assets/images/Project1.png";
 import Project2 from "../../assets/images/Project2.png";
+import Project3 from "../../assets/images/Project3.png";
 import Project from "../../components/project/Project";
 import Cherry from "../../assets/icons/Cherry.png";
 import Image from "next/image";
 
 export default function Projects() {
-  const {t: translate} = useTranslation()
+  const { t: translate } = useTranslation();
 
   return (
     <Container
@@ -28,7 +29,7 @@ export default function Projects() {
         src={Cherry.src}
       />
       <Heading mb={{ base: "10", md: "20" }} mt="40">
-      {translate("sections.projects.title")}
+        {translate("sections.projects.title")}
       </Heading>
       <Animation>
         <Project
@@ -49,6 +50,16 @@ export default function Projects() {
           technologies={["Next.js", "JavaScript", "Chakra-ui"]}
           repository={"https://github.com/juanuranidev/DemoEntrenaly"}
           description={translate("sections.projects.secondProjectDescription")}
+        />
+      </Animation>
+      <Animation>
+        <Project
+          title="Coders Race"
+          image={Project3.src}
+          website={"https://coders-race.vercel.app/"}
+          technologies={["Next.js", "Node.js", "Mongodb"]}
+          repository={"https://github.com/juanuranidev/CodersRace"}
+          description={translate("sections.projects.thirdProjectDescription")}
         />
       </Animation>
     </Container>

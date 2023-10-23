@@ -25,7 +25,8 @@
     "projects": {
       "title": "PROJECTS",
       "firstProjectDescription": "Frères is an existing clothing brand whose products I have always liked, I thought their website could have a better design so I set out to improve it.",
-      "secondProjectDescription": "Entrenally is a self-management application to help coaches perform all tasks related to their work in one place and in a simple way."
+      "secondProjectDescription": "Entrenally is a self-management application to help coaches perform all tasks related to their work in one place and in a simple way.",
+      "thirdProjectDescription": "Coders race is an application to compete with other programmers to see who can write the fastest code. In this application you will be able to race writing functions in the shortest time possible."
     },
     "skills": {
       "title": "SKILLS"

@@ -25,7 +25,8 @@
     "projects": {
       "title": "PROYECTOS",
       "firstProjectDescription": "Frères es una marca de ropa existente cuyos productos siempre me han gustado, pensé que su página web podía tener un mejor diseño así que me propuse a mejorarla.",
-      "secondProjectDescription": "Entrenally es una aplicación de autogestión para ayudar a entrenadores a realizar todas las tareas relacionadas a su trabajo en un solo lugar y de manera sencilla."
+      "secondProjectDescription": "Entrenally es una aplicación de autogestión para ayudar a entrenadores a realizar todas las tareas relacionadas a su trabajo en un solo lugar y de manera sencilla.",
+      "thirdProjectDescription": "Coders race es una aplicación para competir con otros programadores para ver quién puede escribir el código más rápido. En esta aplicación podrás competir escribiendo funciones en el menor tiempo posible."
     },
     "skills": {
       "title": "HABILIDADES"
